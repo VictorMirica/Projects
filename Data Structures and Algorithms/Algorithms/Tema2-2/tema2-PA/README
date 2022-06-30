@@ -1,0 +1,80 @@
+
+324CB Mirica Victor - Tema 2
+
+Pentru citire am folosit clasa MyScanner, scanner rapid, preluat si folosit
+din testul practic.
+
+
+    Fortificatii
+
+Ca schelet, am pornit de la solutia exercitiului 1 din laboratorul 9 - Dijkstra.
+La citire, pe langa matricea de adiacenta, voi forma si un arrayList care contine
+indecsii barbarilor.
+In algoritmul dijkstra, Nu voi parcurge nodurile care reprezinta barbari.
+Odata ce am aplicat algoritmul dijkstra, creez un arrayList care reprezinta
+distanta tuturor drumurilor posibile de la capitala la fiecare barbar.
+Acest vector va fi sortat.
+In continuare, cat timp mai am fortificatii valabile, trec prin vectorul
+de costuri. O sa tin minte indexul la care sunt in variabila 'howMany'.
+In acest for loop, o sa am mai multe cazuri. In primul rand, am cazul in care
+numarul de noduri la care am ajuns este egal cu numarul de fortificatii, caz in
+care incrementez atatea muchii cate fortificatii am, si preluez elementul minim.
+In cazul in care ajung la finalul vectorului, inseamna ca toate costurile sunt egale,
+dar inca mai am fortificatii, asadar incrementez acest element si incep de la inceput.
+Daca ajung la un nod care are distanta mai mare decat nodurile de pana acum, trebuie
+sa adun la toate costurile de pana acum diferenta dintre cele doua costuri.
+La final, printez minimul array-ului de costuri.
+
+Complexitate dijkstra : O(m * log(n))
+Complexitate solutie :
+ O(m * log(n)) + O(k)
+
+
+    Beamdrone
+
+Pentru aceasta problema, am metoda principala shortestPath() si mai multe metode
+ajutatoare. Am clasa Node, care reprezinta un nod, cu campurile x,y si dist.
+x si y reprezinta pozitia in matricea grafului, iar dist reprezinta distanta
+minima de la sursa la acel nod. Vertically este un camp boolean ce reprezinta directia
+dronei cand aceasta intra in nodul precizat.
+Deoarece graficul se poate privi ca un "labirint", unde singurele directii in care se poate
+merge sunt sus, stanga, dreapta si jos.
+Functia checkNode, verifica daca am voie sa intru in nodul dat ca argument.
+Aceasta verificxa ca nodul sa nu fie perete, sa fie in matricea graficului, si
+ca acesta sa nu mai fi fost vizitat, cu un cost mai mare, pana acum.
+Daca nodul a mai fost vizitat, doar ca de data asta il vizitam pe un drum care
+are un cost mai mic, acesta va fi valabil.
+In functia principala, imi creez doua matrici, una pentru noduri vizitate, alta
+pentru costurile minimine ale nodurilor.
+Pentru ca vrem sa parcurgem nodurile in functie de cea mai mica distanta pana la
+ele de la sursa, nu in ordinea in care le introducem, folosim un PriorityQueue.
+Mai avem o variabila boolean switched, care, in cazul ca este true, ne indica
+ca drona trebuie sa se intoarca ca sa intre in nod, asadar distanta trebuie
+incrementata. Parcurgem coada pana cand ajungem la destinatie. Pentru fiecare
+nod, introduc in coada nodurile din cele patru directii posibile, atata timp cat
+ele sunt valabile pentru vizita. Cand intru in nod, verific directia noastra de mers
+si, in cazul in care trebuie sa ne schimbam directia, campul switched va fi true.
+Dupa aceasta, introduc nodul in coada cu distanta aferenta. Daca directia s-a schimbat
+atunci, aceasta distanta va fi incrementata cu 1.
+Pentru rezultatul final, apelez de doua ori acest algoritm, odata incepand sa merg pe
+o directie verticala, odata pe o directie orizontala.
+
+Complexitate algoritm de parcurgere a grafului : O(m*n)
+Complexitate problema: 2*O(m*n)
+
+
+    Curse
+
+Ca schelet, am plecat de la solutia exercitiului 1 din laboratorul 7 - TopSort DFS.
+Dupa citire, creez matricea de adiacenta. Graful va fii creat in ideea: daca masina
+x este cu siguranta mai buna decat masina y (x > y), atunci voi avea o muchie de la
+nodul x la nodul y.
+Pentru asta trec prin Antrenamente si le compar, doua cate doua (A1 cu A2, A2 cu A3,
+A3 cu A4 etc.). Compar cele doua linii, coloana cu coloana. Cand gasesc primele doua
+elemente de pe aceasi coloana care difera, le introduc in matricea de adiacenta.
+La final, apelez sortarea topologica. Aceasta este si rezultatul problemei.
+
+Complexitate topsort: O(n + m)
+Complexitate solutie:
+    O(n + m) + O(a * n)
+

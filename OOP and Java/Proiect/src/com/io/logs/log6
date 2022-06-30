@@ -1,0 +1,1512 @@
+Arena: player1 vs player2
+==============================================================
+
+Battle: snorlax vs neutrel1
+snorlax: hp= 82, attack= 6, defense= 11, specialDefense= 10, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+neutrel1 used a normal attack
+snorlax dodged!
+snorlax hp : 82
+neutrel1 hp : 10
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+neutrel1 used a normal attack
+snorlax hp : 82
+neutrel1 hp : 6
+
+snorlax used a normal attack
+neutrel1 is stunned!
+snorlax hp : 82
+neutrel1 hp : 1
+
+snorlax used a normal attack
+neutrel1 used a normal attack
+snorlax hp : 82
+neutrel1 hp : -4
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 83, attack= 7, defense= 12, specialDefense= 11, special= false
+
+
+Battle: psyduck vs neutrel1
+psyduck: hp= 45, attack= 5, defense= 5, specialDefense= 6, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+psyduck hp : 45
+neutrel1 hp : 8
+
+psyduck used a normal attack
+neutrel1 used a normal attack
+psyduck hp : 45
+neutrel1 hp : 4
+
+neutrel1 used a normal attack
+psyduck used a normal attack
+psyduck hp : 45
+neutrel1 hp : 0
+
+psyduck won!
+psyduck leveled up! psyduck: hp= 46, attack= 6, defense= 6, specialDefense= 7, special= false
+
+
+Battle: snorlax vs neutrel2
+snorlax: hp= 83, attack= 7, defense= 12, specialDefense= 11, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+snorlax used a normal attack
+snorlax hp : 83
+neutrel2 hp : 14
+
+snorlax used a normal attack
+neutrel2 used a normal attack
+snorlax hp : 83
+neutrel2 hp : 8
+
+snorlax used a normal attack
+neutrel2 used a normal attack
+snorlax hp : 83
+neutrel2 hp : 2
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+neutrel2 used a normal attack
+snorlax hp : 83
+neutrel2 hp : -2
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 84, attack= 8, defense= 13, specialDefense= 12, special= false
+
+
+Battle: psyduck vs neutrel2
+psyduck: hp= 46, attack= 6, defense= 6, specialDefense= 7, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+psyduck used a normal attack
+psyduck hp : 46
+neutrel2 hp : 15
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+psyduck hp : 46
+neutrel2 hp : 13
+
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+neutrel2 used a normal attack
+psyduck hp : 46
+neutrel2 hp : 11
+
+psyduck used a normal attack
+neutrel2 is stunned!
+psyduck hp : 46
+neutrel2 hp : 6
+
+neutrel2 used a normal attack
+psyduck used a normal attack
+psyduck hp : 46
+neutrel2 hp : 1
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+psyduck hp : 46
+neutrel2 hp : -1
+
+psyduck won!
+psyduck leveled up! psyduck: hp= 47, attack= 7, defense= 7, specialDefense= 8, special= false
+
+
+Battle: snorlax vs psyduck
+snorlax: hp= 84, attack= 8, defense= 13, specialDefense= 12, special= false
+psyduck: hp= 47, attack= 7, defense= 7, specialDefense= 8, special= false
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 84
+psyduck hp : 46
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 84
+psyduck hp : 45
+
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+snorlax used a normal attack
+snorlax hp : 82
+psyduck hp : 44
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax is stunned!
+snorlax hp : 80
+psyduck hp : 44
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+psyduck used a normal attack
+snorlax hp : 80
+psyduck hp : 40
+
+snorlax used a normal attack
+psyduck is stunned!
+snorlax hp : 80
+psyduck hp : 39
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+psyduck used a normal attack
+snorlax dodged!
+snorlax hp : 80
+psyduck hp : 39
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+snorlax hp : 78
+psyduck hp : 38
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 78
+psyduck hp : 37
+
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+snorlax used a normal attack
+snorlax hp : 76
+psyduck hp : 36
+
+snorlax is stunned!
+psyduck used a normal attack
+snorlax hp : 76
+psyduck hp : 36
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax hp : 74
+psyduck hp : 32
+
+snorlax used a normal attack
+psyduck is stunned!
+snorlax hp : 74
+psyduck hp : 31
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 74
+psyduck hp : 30
+
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+snorlax used a normal attack
+snorlax hp : 72
+psyduck hp : 29
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax is stunned!
+snorlax hp : 70
+psyduck hp : 29
+
+psyduck used a normal attack
+snorlax used a normal attack
+snorlax hp : 70
+psyduck hp : 28
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+psyduck used a normal attack
+snorlax dodged!
+snorlax hp : 70
+psyduck hp : 28
+
+psyduck used a normal attack
+snorlax used a normal attack
+snorlax hp : 70
+psyduck hp : 27
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+psyduck used a normal attack
+snorlax hp : 70
+psyduck hp : 23
+
+snorlax used a normal attack
+psyduck is stunned!
+snorlax hp : 70
+psyduck hp : 22
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+snorlax hp : 68
+psyduck hp : 21
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+snorlax dodged!
+snorlax hp : 68
+psyduck hp : 21
+
+psyduck used a normal attack
+snorlax used a normal attack
+snorlax hp : 68
+psyduck hp : 20
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 68
+psyduck hp : 19
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 68
+psyduck hp : 18
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+psyduck used a normal attack
+snorlax hp : 68
+psyduck hp : 14
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+psyduck is stunned!
+snorlax hp : 68
+psyduck hp : 14
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+snorlax hp : 66
+psyduck hp : 13
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 66
+psyduck hp : 12
+
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+snorlax used a normal attack
+snorlax hp : 64
+psyduck hp : 11
+
+snorlax is stunned!
+psyduck used a normal attack
+snorlax hp : 64
+psyduck hp : 11
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 64
+psyduck hp : 10
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax dodged!
+snorlax hp : 64
+psyduck hp : 10
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+psyduck used a normal attack
+snorlax hp : 64
+psyduck hp : 6
+
+snorlax used a normal attack
+psyduck is stunned!
+snorlax hp : 64
+psyduck hp : 5
+
+psyduck used an ability! damage=2, stun=true, dodge=false, cooldown=5
+snorlax used a normal attack
+snorlax hp : 62
+psyduck hp : 4
+
+psyduck used an ability! damage=2, stun=false, dodge=false, cooldown=4
+snorlax is stunned!
+snorlax hp : 60
+psyduck hp : 4
+
+snorlax used a normal attack
+psyduck used a normal attack
+snorlax hp : 60
+psyduck hp : 3
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+psyduck used a normal attack
+snorlax hp : 60
+psyduck hp : -1
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 85, attack= 9, defense= 14, specialDefense= 13, special= false
+
+
+==============================================================
+
+Battle: pikachu vs meowth
+pikachu: hp= 65, attack= 3, defense= 7, specialDefense= 9, special= true
+meowth: hp= 45, attack= 8, defense= 7, specialDefense= 8, special= false
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth dodged!
+pikachu dodged!
+pikachu hp : 65
+meowth hp : 45
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used a normal attack
+pikachu hp : 64
+meowth hp : 39
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 63
+meowth hp : 39
+
+pikachu used a normal attack
+meowth used a normal attack
+pikachu hp : 62
+meowth hp : 39
+
+pikachu used a normal attack
+meowth used a normal attack
+pikachu hp : 61
+meowth hp : 39
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth dodged!
+pikachu dodged!
+pikachu hp : 61
+meowth hp : 39
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth dodged!
+pikachu hp : 56
+meowth hp : 39
+
+meowth used a normal attack
+pikachu used a normal attack
+pikachu hp : 55
+meowth hp : 39
+
+pikachu used a normal attack
+meowth used a normal attack
+pikachu hp : 54
+meowth hp : 39
+
+pikachu used a normal attack
+meowth used a normal attack
+pikachu hp : 53
+meowth hp : 39
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 48
+meowth hp : 39
+
+pikachu used a normal attack
+meowth used a normal attack
+pikachu hp : 47
+meowth hp : 39
+
+pikachu used a normal attack
+meowth used a normal attack
+pikachu hp : 46
+meowth hp : 39
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+meowth used a normal attack
+pikachu dodged!
+pikachu hp : 46
+meowth hp : 35
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth is stunned!
+pikachu hp : 46
+meowth hp : 29
+
+meowth used a normal attack
+pikachu used a normal attack
+pikachu hp : 45
+meowth hp : 29
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 40
+meowth hp : 29
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 39
+meowth hp : 29
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+meowth used a normal attack
+pikachu dodged!
+pikachu hp : 39
+meowth hp : 25
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth is stunned!
+pikachu hp : 39
+meowth hp : 19
+
+meowth used a normal attack
+pikachu used a normal attack
+pikachu hp : 38
+meowth hp : 19
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 37
+meowth hp : 19
+
+meowth used a normal attack
+pikachu used a normal attack
+pikachu hp : 36
+meowth hp : 19
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth dodged!
+pikachu dodged!
+pikachu hp : 36
+meowth hp : 19
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used a normal attack
+pikachu hp : 35
+meowth hp : 13
+
+meowth used a normal attack
+pikachu used a normal attack
+pikachu hp : 34
+meowth hp : 13
+
+meowth used a normal attack
+pikachu used a normal attack
+pikachu hp : 33
+meowth hp : 13
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 32
+meowth hp : 13
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used a normal attack
+pikachu hp : 31
+meowth hp : 7
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+meowth used a normal attack
+pikachu dodged!
+pikachu hp : 31
+meowth hp : 3
+
+pikachu used a normal attack
+meowth is stunned!
+pikachu hp : 31
+meowth hp : 3
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 30
+meowth hp : 3
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+pikachu used a normal attack
+meowth dodged!
+pikachu hp : 25
+meowth hp : 3
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used a normal attack
+pikachu hp : 24
+meowth hp : -3
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 66, attack= 4, defense= 8, specialDefense= 10, special= true
+
+
+==============================================================
+
+Battle: squirtle vs neutrel1
+squirtle: hp= 66, attack= 10, defense= 11, specialDefense= 13, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+squirtle hp : 66
+neutrel1 hp : 6
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+neutrel1 used a normal attack
+squirtle hp : 66
+neutrel1 hp : 4
+
+neutrel1 is stunned!
+squirtle used a normal attack
+squirtle hp : 66
+neutrel1 hp : -5
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 67, attack= 11, defense= 12, specialDefense= 14, special= true
+
+
+Battle: snorlax vs neutrel1
+snorlax: hp= 68, attack= 12, defense= 9, specialDefense= 13, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+neutrel1 used a normal attack
+snorlax hp : 68
+neutrel1 hp : 6
+
+snorlax used a normal attack
+neutrel1 is stunned!
+snorlax hp : 68
+neutrel1 hp : -5
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 69, attack= 13, defense= 10, specialDefense= 14, special= false
+
+
+Battle: squirtle vs neutrel1
+squirtle: hp= 67, attack= 11, defense= 12, specialDefense= 14, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+squirtle used a normal attack
+neutrel1 used a normal attack
+squirtle hp : 67
+neutrel1 hp : 0
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 68, attack= 12, defense= 13, specialDefense= 15, special= true
+
+
+Battle: snorlax vs neutrel1
+snorlax: hp= 69, attack= 13, defense= 10, specialDefense= 14, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+snorlax used a normal attack
+snorlax hp : 69
+neutrel1 hp : -2
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 70, attack= 14, defense= 11, specialDefense= 15, special= false
+
+
+Battle: squirtle vs neutrel2
+squirtle: hp= 68, attack= 12, defense= 13, specialDefense= 15, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+squirtle hp : 68
+neutrel2 hp : 16
+
+squirtle used a normal attack
+neutrel2 used a normal attack
+squirtle hp : 68
+neutrel2 hp : 5
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+neutrel2 used a normal attack
+squirtle hp : 68
+neutrel2 hp : 3
+
+neutrel2 is stunned!
+squirtle used a normal attack
+squirtle hp : 68
+neutrel2 hp : -8
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 69, attack= 13, defense= 14, specialDefense= 16, special= true
+
+
+Battle: snorlax vs neutrel2
+snorlax: hp= 70, attack= 14, defense= 11, specialDefense= 15, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+neutrel2 used a normal attack
+snorlax dodged!
+snorlax hp : 70
+neutrel2 hp : 20
+
+snorlax used a normal attack
+neutrel2 used a normal attack
+snorlax hp : 70
+neutrel2 hp : 7
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+neutrel2 used a normal attack
+snorlax hp : 70
+neutrel2 hp : 3
+
+snorlax used a normal attack
+neutrel2 is stunned!
+snorlax hp : 70
+neutrel2 hp : -10
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 71, attack= 15, defense= 12, specialDefense= 16, special= false
+
+
+Battle: squirtle vs neutrel1
+squirtle: hp= 69, attack= 13, defense= 14, specialDefense= 16, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+neutrel1 used a normal attack
+squirtle hp : 69
+neutrel1 hp : 8
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+neutrel1 is stunned!
+squirtle hp : 69
+neutrel1 hp : 4
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+neutrel1 used a normal attack
+squirtle hp : 69
+neutrel1 hp : 2
+
+neutrel1 is stunned!
+squirtle used a normal attack
+squirtle hp : 69
+neutrel1 hp : -10
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 70, attack= 14, defense= 15, specialDefense= 17, special= true
+
+
+Battle: snorlax vs neutrel1
+snorlax: hp= 71, attack= 15, defense= 12, specialDefense= 16, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+snorlax used a normal attack
+snorlax hp : 71
+neutrel1 hp : -4
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 72, attack= 16, defense= 13, specialDefense= 17, special= false
+
+
+Battle: squirtle vs neutrel1
+squirtle: hp= 70, attack= 14, defense= 15, specialDefense= 17, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+squirtle hp : 70
+neutrel1 hp : 6
+
+squirtle used a normal attack
+neutrel1 used a normal attack
+squirtle hp : 70
+neutrel1 hp : -7
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 71, attack= 15, defense= 16, specialDefense= 18, special= true
+
+
+Battle: snorlax vs neutrel1
+snorlax: hp= 72, attack= 16, defense= 13, specialDefense= 17, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+snorlax used a normal attack
+snorlax hp : 72
+neutrel1 hp : -5
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 73, attack= 17, defense= 14, specialDefense= 18, special= false
+
+
+Battle: squirtle vs neutrel2
+squirtle: hp= 71, attack= 15, defense= 16, specialDefense= 18, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+neutrel2 used a normal attack
+squirtle hp : 71
+neutrel2 hp : 18
+
+squirtle used a normal attack
+neutrel2 is stunned!
+squirtle hp : 71
+neutrel2 hp : 4
+
+neutrel2 used a normal attack
+squirtle used a normal attack
+squirtle hp : 71
+neutrel2 hp : -10
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 72, attack= 16, defense= 17, specialDefense= 19, special= true
+
+
+Battle: snorlax vs neutrel2
+snorlax: hp= 73, attack= 17, defense= 14, specialDefense= 18, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+snorlax used a normal attack
+neutrel2 used a normal attack
+snorlax hp : 73
+neutrel2 hp : 4
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+neutrel2 used a normal attack
+snorlax dodged!
+snorlax hp : 73
+neutrel2 hp : 4
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+neutrel2 used a normal attack
+snorlax hp : 73
+neutrel2 hp : 0
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 74, attack= 18, defense= 15, specialDefense= 19, special= false
+
+
+Battle: squirtle vs neutrel2
+squirtle: hp= 72, attack= 16, defense= 17, specialDefense= 19, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+squirtle hp : 72
+neutrel2 hp : 16
+
+squirtle used a normal attack
+neutrel2 used a normal attack
+squirtle hp : 72
+neutrel2 hp : 1
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+neutrel2 used a normal attack
+squirtle hp : 72
+neutrel2 hp : -1
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 73, attack= 17, defense= 18, specialDefense= 20, special= true
+
+
+Battle: snorlax vs neutrel2
+snorlax: hp= 74, attack= 18, defense= 15, specialDefense= 19, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+snorlax used a normal attack
+neutrel2 used a normal attack
+snorlax hp : 74
+neutrel2 hp : 3
+
+neutrel2 used a normal attack
+snorlax used a normal attack
+snorlax hp : 74
+neutrel2 hp : -14
+
+snorlax won!
+snorlax leveled up! snorlax: hp= 75, attack= 19, defense= 16, specialDefense= 20, special= false
+
+
+Battle: squirtle vs snorlax
+squirtle: hp= 73, attack= 17, defense= 18, specialDefense= 20, special= true
+snorlax: hp= 75, attack= 19, defense= 16, specialDefense= 20, special= false
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 72
+snorlax hp : 71
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 72
+snorlax hp : 71
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 71
+snorlax hp : 71
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 67
+snorlax hp : 67
+
+squirtle is stunned!
+snorlax used a normal attack
+squirtle hp : 66
+snorlax hp : 67
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 65
+snorlax hp : 67
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 65
+snorlax hp : 67
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 64
+snorlax hp : 65
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 64
+snorlax hp : 61
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 60
+snorlax hp : 61
+
+squirtle is stunned!
+snorlax used a normal attack
+squirtle hp : 59
+snorlax hp : 61
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 59
+snorlax hp : 61
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 58
+snorlax hp : 61
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 57
+snorlax hp : 61
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 53
+snorlax hp : 59
+
+snorlax is stunned!
+squirtle is stunned!
+squirtle hp : 53
+snorlax hp : 59
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 53
+snorlax hp : 59
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 52
+snorlax hp : 57
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 52
+snorlax hp : 57
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 51
+snorlax hp : 53
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 47
+snorlax hp : 53
+
+squirtle is stunned!
+snorlax used a normal attack
+squirtle hp : 46
+snorlax hp : 53
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 45
+snorlax hp : 53
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 45
+snorlax hp : 53
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 44
+snorlax hp : 51
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 44
+snorlax hp : 47
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 40
+snorlax hp : 47
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 39
+snorlax hp : 47
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 38
+snorlax hp : 45
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 38
+snorlax hp : 41
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 38
+snorlax hp : 41
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 34
+snorlax hp : 39
+
+snorlax is stunned!
+squirtle is stunned!
+squirtle hp : 34
+snorlax hp : 39
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 33
+snorlax hp : 39
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 32
+snorlax hp : 39
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 32
+snorlax hp : 39
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 31
+snorlax hp : 35
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 30
+snorlax hp : 35
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 29
+snorlax hp : 33
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 29
+snorlax hp : 29
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 25
+snorlax hp : 27
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 25
+snorlax hp : 27
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 24
+snorlax hp : 23
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 23
+snorlax hp : 21
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 23
+snorlax hp : 21
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 23
+snorlax hp : 21
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 19
+snorlax hp : 17
+
+squirtle is stunned!
+snorlax used a normal attack
+squirtle hp : 18
+snorlax hp : 17
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 17
+snorlax hp : 15
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 17
+snorlax hp : 15
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 17
+snorlax hp : 15
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 16
+snorlax hp : 11
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 12
+snorlax hp : 11
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 11
+snorlax hp : 11
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 10
+snorlax hp : 9
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 10
+snorlax hp : 5
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 10
+snorlax hp : 5
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 6
+snorlax hp : 3
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 6
+snorlax hp : 3
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 5
+snorlax hp : 1
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 5
+snorlax hp : -3
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 74, attack= 18, defense= 19, specialDefense= 21, special= true
+
+
+==============================================================
+
+Battle: squirtle vs snorlax
+squirtle: hp= 74, attack= 18, defense= 19, specialDefense= 21, special= true
+snorlax: hp= 75, attack= 19, defense= 16, specialDefense= 20, special= false
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 74
+snorlax hp : 75
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+squirtle hp : 70
+snorlax hp : 73
+
+snorlax is stunned!
+squirtle is stunned!
+squirtle hp : 70
+snorlax hp : 73
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 70
+snorlax hp : 71
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 70
+snorlax hp : 67
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 70
+snorlax hp : 67
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 66
+snorlax hp : 67
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 66
+snorlax hp : 67
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 66
+snorlax hp : 67
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 66
+snorlax hp : 63
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 66
+snorlax hp : 63
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 66
+snorlax hp : 63
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 62
+snorlax hp : 61
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 62
+snorlax hp : 61
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 62
+snorlax hp : 61
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 62
+snorlax hp : 57
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 62
+snorlax hp : 55
+
+snorlax is stunned!
+squirtle used a normal attack
+squirtle hp : 62
+snorlax hp : 55
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 58
+snorlax hp : 51
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 58
+snorlax hp : 51
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 58
+snorlax hp : 51
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 58
+snorlax hp : 51
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 58
+snorlax hp : 49
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 58
+snorlax hp : 49
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 58
+snorlax hp : 49
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 58
+snorlax hp : 47
+
+snorlax is stunned!
+squirtle used a normal attack
+squirtle hp : 58
+snorlax hp : 47
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 54
+snorlax hp : 47
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle is stunned!
+squirtle hp : 54
+snorlax hp : 47
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 47
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 43
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 41
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 54
+snorlax hp : 41
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 39
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 54
+snorlax hp : 35
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 33
+
+snorlax is stunned!
+squirtle used a normal attack
+squirtle hp : 54
+snorlax hp : 33
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 54
+snorlax hp : 33
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 33
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 54
+snorlax hp : 29
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 50
+snorlax hp : 27
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 50
+snorlax hp : 27
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 50
+snorlax hp : 27
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 50
+snorlax hp : 25
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 50
+snorlax hp : 25
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 50
+snorlax hp : 25
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 50
+snorlax hp : 25
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 50
+snorlax hp : 21
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 46
+snorlax hp : 19
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 46
+snorlax hp : 19
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 46
+snorlax hp : 19
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 46
+snorlax hp : 19
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 46
+snorlax hp : 19
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 46
+snorlax hp : 19
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 46
+snorlax hp : 17
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 46
+snorlax hp : 17
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 46
+snorlax hp : 17
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 46
+snorlax hp : 13
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 46
+snorlax hp : 11
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 46
+snorlax hp : 11
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 42
+snorlax hp : 11
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 42
+snorlax hp : 11
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 42
+snorlax hp : 11
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 42
+snorlax hp : 11
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 42
+snorlax hp : 7
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 42
+snorlax hp : 5
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 42
+snorlax hp : 5
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 42
+snorlax hp : 5
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 42
+snorlax hp : 1
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+squirtle hp : 38
+snorlax hp : -1
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 75, attack= 19, defense= 20, specialDefense= 22, special= true
+
+
+player1 aged 7 won!

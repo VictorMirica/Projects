@@ -1,0 +1,69 @@
+
+Mirica Victor - 324CB - Tema 3
+
+Pentru Makefile si pentru fisierele sursa, am pornit de la scheletul laboratorului 10.
+
+In makefile, am adaugat si compilarea fisierului pasron.c
+
+Pentru prelucrarea JSON am ales sa folosesc parson deoarece acesta era sugerat in enunt
+pentru C. Dupa ce m-am uitat pe documentatia de pe github,
+am constatat ca este destul de usor de implementat pentru nevoile acestei teme.
+
+In fisierul requests.c, am mai adaugat inca un parametru la functiile compute_get_request si
+compute_post_request, pentru a acomoda token-ul JWT. In plus, daca campul token nu este 
+NULL, acesta va fi adaugat ca ultima linie din header, precum este specificat in enunt. 
+De asemenea, am mai adaugat inca o functie pentru un delete request. Acesta functioneaza
+identic cu un get request, doar ca are prima linie din header schimbata.
+
+In client.c, dupa ce am deschis socket pe ip-ul specificat, verific ce comanda primesc
+de la tastatura. 
+
+In cazul comenzii register apelez functia ajutatoare inputUserPass.
+Acesta functie va afisa in linia de comanda user= si password= si va prelua informatiile
+date in doua stringuri. Dupa care, se va creea un obiect JSON cu aceste doua campuri
+si se va intoarce un string format dupa noul json creat. Dupa aceasta, se va trimite un 
+post request cu string-ul json si se va primi response de la server. Am folosit functia
+din laborator, basic_extract_json_response() pentru a extrage, daca este cazul, o eroare.
+In caz in care nu exista erori, afisez ca user-ul a fost inregistrat.
+
+In cazul comenzii login, verific daca suntem deja logati cu un cont. In cazul in care
+putem sa ne logam, apelez functia inputUserPass, explicata mai sus, si trimit
+un post request. Din raspunsul server-ului extrag daca am erori, altfel preiau
+cookie-ul din raspuns. Apelez strstr pentru a prelua string-ul cu cookies dupa care un strtok
+pentru a prelua doar partea din cookie care imi trebuie. Salvez cookie-ul intr-un string alocat.
+
+Pentru comanda enter_library, verific daca suntem logati, trimit un get request catre server, de
+data asta introduc si cookie-ul pe care ar trebui sa il am. Extrag, in mod similar cum am extras 
+cookie-ul, token-ul JWT.
+
+In cazul comenzii get_books, Trimit un get request dupa ce ferific faptul ca suntem logati si faptul
+ca token-ul JWT este prezent. Acest get request va fi trimis cu cookie-ul si token-ul ca parametrii.
+Din response, preiau string-ul pe care sunt afisate cartile, folosind strstr.
+
+Pentru urmatoarele comenzi, verific de fiecare data daca sunt logat, si daca am acces
+in biblioteca.
+Daca am primit comanda get_books, afisez "id=" dupa care citesc id-ul. Formatez url-ul pe care voi
+trimite get request, adaugand id-ul citit la final. Dupa asta, din response-ul serverului extrag
+json-ul primit si il afisez.
+
+Comanda add_book: Citesc de la tastatura stringurile title, author, genre si publisher. Acestea
+se vor citi pana la new line, si pot include orice caractere, inclusiv spatii. In cazul numarului
+de pagini, aici am voie sa citesc doar numere, asadar voi verifica daca ce a scris user-ul este un
+numar. 
+Dupa ce am preluat toate campurile, creez un obiect json, ca si in cazul unui user. Transform
+obiectul json in string, pe care il voi trimite in post request. Odata ce primesc raspuns de la 
+server, verific daca am vreo eroare dupa care afisez un mesaj corespunzator.
+
+Pentru comanda delete_book, preiau id-ul cartii dupa care trimit un delete request catre server.
+Preiau mesajul primit de la server, verific daca primesc o eroare sau daca am sters cartea
+cu succes.
+
+In cazul comenzii logout, deloghez user-ul, acesta pierde acces-ul la biblioteca si este nevoit
+sa se relogheze cu un cont pentru a putea sa o acceseze. Trimit un get request catre url-ul
+specificat in enunt.
+
+In cazul comenzii exit, ies din while loop si inchid programul doar dupa ce am inchis si 
+conexiunea catre server prin apelarea close(sockfd).
+
+
+

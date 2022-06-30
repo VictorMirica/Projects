@@ -1,0 +1,555 @@
+Arena: maria vs gigi
+==============================================================
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 37, attack= 5, defense= 6, specialDefense= 10, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 37
+neutrel2 hp : 16
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 37
+neutrel2 hp : 12
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+pikachu hp : 37
+neutrel2 hp : 6
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+neutrel2 used a normal attack
+pikachu dodged!
+pikachu hp : 37
+neutrel2 hp : 2
+
+pikachu used a normal attack
+neutrel2 is stunned!
+pikachu hp : 37
+neutrel2 hp : -2
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 38, attack= 6, defense= 7, specialDefense= 11, special= true
+
+
+Battle: charmander vs neutrel2
+charmander: hp= 80, attack= 13, defense= 8, specialDefense= 8, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+neutrel2 used a normal attack
+charmander hp : 80
+neutrel2 hp : 13
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+charmander hp : 80
+neutrel2 hp : 9
+
+neutrel2 is stunned!
+charmander used a normal attack
+charmander hp : 80
+neutrel2 hp : -3
+
+charmander won!
+charmander leveled up! charmander: hp= 81, attack= 14, defense= 9, specialDefense= 9, special= false
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 38, attack= 6, defense= 7, specialDefense= 11, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 38
+neutrel2 hp : 15
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 38
+neutrel2 hp : 10
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+pikachu hp : 38
+neutrel2 hp : 4
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+neutrel2 used a normal attack
+pikachu dodged!
+pikachu hp : 38
+neutrel2 hp : 0
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 39, attack= 7, defense= 8, specialDefense= 12, special= true
+
+
+Battle: charmander vs neutrel2
+charmander: hp= 81, attack= 14, defense= 9, specialDefense= 9, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+charmander used a normal attack
+charmander hp : 81
+neutrel2 hp : 7
+
+neutrel2 used a normal attack
+charmander used a normal attack
+charmander hp : 81
+neutrel2 hp : -6
+
+charmander won!
+charmander leveled up! charmander: hp= 82, attack= 15, defense= 10, specialDefense= 10, special= false
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 39, attack= 7, defense= 8, specialDefense= 12, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 39
+neutrel2 hp : 14
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 39
+neutrel2 hp : 8
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 39
+neutrel2 hp : 2
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 39
+neutrel2 hp : -4
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 40, attack= 8, defense= 9, specialDefense= 13, special= true
+
+
+Battle: charmander vs neutrel2
+charmander: hp= 82, attack= 15, defense= 10, specialDefense= 10, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+charmander used a normal attack
+charmander hp : 82
+neutrel2 hp : 6
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+charmander hp : 82
+neutrel2 hp : 2
+
+charmander used a normal attack
+neutrel2 is stunned!
+charmander hp : 82
+neutrel2 hp : -12
+
+charmander won!
+charmander leveled up! charmander: hp= 83, attack= 16, defense= 11, specialDefense= 11, special= false
+
+
+Battle: pikachu vs charmander
+pikachu: hp= 40, attack= 8, defense= 9, specialDefense= 13, special= true
+charmander: hp= 83, attack= 16, defense= 11, specialDefense= 11, special= false
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used a normal attack
+pikachu hp : 33
+charmander hp : 77
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+pikachu dodged!
+pikachu hp : 33
+charmander hp : 73
+
+pikachu used a normal attack
+charmander is stunned!
+pikachu hp : 33
+charmander hp : 73
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+pikachu used a normal attack
+pikachu hp : 29
+charmander hp : 73
+
+pikachu is stunned!
+charmander used a normal attack
+pikachu hp : 22
+charmander hp : 73
+
+pikachu used a normal attack
+charmander used a normal attack
+pikachu hp : 15
+charmander hp : 73
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used a normal attack
+pikachu hp : 8
+charmander hp : 67
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+pikachu used a normal attack
+pikachu hp : 1
+charmander hp : 67
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+pikachu dodged!
+pikachu hp : 1
+charmander hp : 63
+
+pikachu used a normal attack
+charmander is stunned!
+pikachu hp : 1
+charmander hp : 63
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used a normal attack
+pikachu hp : -6
+charmander hp : 57
+
+charmander won!
+charmander leveled up! charmander: hp= 84, attack= 17, defense= 12, specialDefense= 12, special= false
+
+
+==============================================================
+
+Battle: eevee vs neutrel2
+eevee: hp= 53, attack= 13, defense= 7, specialDefense= 9, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+eevee used an ability! damage=3, stun=true, dodge=false, cooldown=3
+neutrel2 used a normal attack
+eevee hp : 53
+neutrel2 hp : 17
+
+eevee used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 is stunned!
+eevee hp : 53
+neutrel2 hp : 12
+
+eevee used a normal attack
+neutrel2 used a normal attack
+eevee hp : 53
+neutrel2 hp : 0
+
+eevee won!
+eevee leveled up! eevee: hp= 54, attack= 14, defense= 8, specialDefense= 10, special= true
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 72, attack= 14, defense= 6, specialDefense= 10, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 72
+neutrel2 hp : 7
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 72
+neutrel2 hp : 1
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 72
+neutrel2 hp : -12
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 73, attack= 15, defense= 7, specialDefense= 11, special= true
+
+
+Battle: eevee vs bulbasaur
+eevee: hp= 54, attack= 14, defense= 8, specialDefense= 10, special= true
+bulbasaur: hp= 73, attack= 15, defense= 7, specialDefense= 11, special= true
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+eevee used a normal attack
+eevee hp : 49
+bulbasaur hp : 70
+
+eevee used a normal attack
+bulbasaur used a normal attack
+eevee hp : 44
+bulbasaur hp : 67
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+eevee used a normal attack
+eevee hp : 38
+bulbasaur hp : 64
+
+eevee used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur used a normal attack
+eevee hp : 33
+bulbasaur hp : 59
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+eevee used a normal attack
+eevee hp : 28
+bulbasaur hp : 56
+
+bulbasaur used a normal attack
+eevee used a normal attack
+eevee hp : 23
+bulbasaur hp : 53
+
+eevee used a normal attack
+bulbasaur used a normal attack
+eevee hp : 18
+bulbasaur hp : 50
+
+eevee used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur used a normal attack
+eevee hp : 13
+bulbasaur hp : 45
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+eevee used a normal attack
+eevee hp : 8
+bulbasaur hp : 42
+
+eevee used an ability! damage=3, stun=true, dodge=false, cooldown=3
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+eevee hp : 2
+bulbasaur hp : 39
+
+bulbasaur is stunned!
+eevee used a normal attack
+eevee hp : 2
+bulbasaur hp : 36
+
+eevee used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+eevee hp : -3
+bulbasaur hp : 31
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 74, attack= 16, defense= 8, specialDefense= 12, special= true
+
+
+==============================================================
+
+Battle: meowth vs vulpix
+meowth: hp= 71, attack= 12, defense= 10, specialDefense= 8, special= false
+vulpix: hp= 58, attack= 13, defense= 5, specialDefense= 13, special= false
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+meowth used a normal attack
+meowth hp : 63
+vulpix hp : 51
+
+meowth is stunned!
+vulpix used a normal attack
+meowth hp : 60
+vulpix hp : 51
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+meowth dodged!
+vulpix dodged!
+meowth hp : 60
+vulpix hp : 51
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+vulpix used a normal attack
+meowth dodged!
+meowth hp : 60
+vulpix hp : 50
+
+vulpix used a normal attack
+meowth used a normal attack
+meowth hp : 57
+vulpix hp : 43
+
+meowth used a normal attack
+vulpix used a normal attack
+meowth hp : 54
+vulpix hp : 36
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+meowth dodged!
+meowth hp : 54
+vulpix hp : 35
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+vulpix used a normal attack
+meowth dodged!
+meowth hp : 54
+vulpix hp : 30
+
+vulpix used a normal attack
+meowth used a normal attack
+meowth hp : 51
+vulpix hp : 23
+
+meowth used a normal attack
+vulpix used a normal attack
+meowth hp : 48
+vulpix hp : 16
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+vulpix used a normal attack
+meowth dodged!
+meowth hp : 48
+vulpix hp : 15
+
+vulpix used a normal attack
+meowth used a normal attack
+meowth hp : 45
+vulpix hp : 8
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+meowth used a normal attack
+meowth hp : 37
+vulpix hp : 1
+
+vulpix used a normal attack
+meowth is stunned!
+meowth hp : 34
+vulpix hp : 1
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+vulpix used a normal attack
+meowth dodged!
+meowth hp : 34
+vulpix hp : 0
+
+meowth won!
+meowth leveled up! meowth: hp= 72, attack= 13, defense= 11, specialDefense= 9, special= false
+
+
+==============================================================
+
+Battle: meowth vs charmander
+meowth: hp= 72, attack= 13, defense= 11, specialDefense= 9, special= false
+charmander: hp= 84, attack= 17, defense= 12, specialDefense= 12, special= false
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+charmander used a normal attack
+meowth dodged!
+meowth hp : 72
+charmander hp : 79
+
+meowth used a normal attack
+charmander used a normal attack
+meowth hp : 66
+charmander hp : 78
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+meowth dodged!
+meowth hp : 66
+charmander hp : 77
+
+charmander used a normal attack
+meowth used a normal attack
+meowth hp : 60
+charmander hp : 76
+
+charmander used a normal attack
+meowth used a normal attack
+meowth hp : 54
+charmander hp : 75
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+meowth used a normal attack
+meowth hp : 50
+charmander hp : 74
+
+meowth is stunned!
+charmander used a normal attack
+meowth hp : 44
+charmander hp : 74
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+charmander used a normal attack
+meowth dodged!
+meowth hp : 44
+charmander hp : 73
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+meowth used a normal attack
+meowth hp : 37
+charmander hp : 72
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+charmander used a normal attack
+meowth dodged!
+meowth hp : 37
+charmander hp : 67
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+meowth dodged!
+meowth hp : 37
+charmander hp : 66
+
+meowth used a normal attack
+charmander used a normal attack
+meowth hp : 31
+charmander hp : 65
+
+meowth used a normal attack
+charmander used a normal attack
+meowth hp : 25
+charmander hp : 64
+
+meowth used a normal attack
+charmander used a normal attack
+meowth hp : 19
+charmander hp : 63
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+charmander used a normal attack
+meowth dodged!
+meowth hp : 19
+charmander hp : 58
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+meowth dodged!
+meowth hp : 19
+charmander hp : 57
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+meowth used a normal attack
+meowth hp : 15
+charmander hp : 56
+
+meowth is stunned!
+charmander used a normal attack
+meowth hp : 9
+charmander hp : 56
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+charmander used a normal attack
+meowth dodged!
+meowth hp : 9
+charmander hp : 51
+
+meowth used a normal attack
+charmander used a normal attack
+meowth hp : 3
+charmander hp : 50
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+meowth used a normal attack
+meowth hp : -1
+charmander hp : 49
+
+charmander won!
+charmander leveled up! charmander: hp= 85, attack= 18, defense= 13, specialDefense= 13, special= false
+
+
+gigi aged 22 won!

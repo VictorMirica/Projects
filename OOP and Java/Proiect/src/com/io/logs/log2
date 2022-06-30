@@ -1,0 +1,910 @@
+Arena: ion vs andrei
+==============================================================
+
+Battle: bulbasaur vs snorlax
+bulbasaur: hp= 42, attack= 5, defense= 3, specialDefense= 1, special= true
+snorlax: hp= 62, attack= 3, defense= 6, specialDefense= 4, special= false
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+bulbasaur hp : 42
+snorlax hp : 57
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+bulbasaur hp : 42
+snorlax hp : 57
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+bulbasaur used a normal attack
+bulbasaur hp : 38
+snorlax hp : 56
+
+bulbasaur is stunned!
+snorlax used a normal attack
+bulbasaur hp : 38
+snorlax hp : 56
+
+bulbasaur used a normal attack
+snorlax used a normal attack
+bulbasaur hp : 38
+snorlax hp : 55
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+bulbasaur hp : 38
+snorlax hp : 49
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax dodged!
+bulbasaur hp : 38
+snorlax hp : 49
+
+bulbasaur used a normal attack
+snorlax used a normal attack
+bulbasaur hp : 38
+snorlax hp : 48
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+bulbasaur used a normal attack
+bulbasaur hp : 34
+snorlax hp : 47
+
+bulbasaur is stunned!
+snorlax used a normal attack
+bulbasaur hp : 34
+snorlax hp : 47
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+bulbasaur hp : 34
+snorlax hp : 42
+
+snorlax used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 34
+snorlax hp : 41
+
+snorlax used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 34
+snorlax hp : 40
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+bulbasaur used a normal attack
+bulbasaur hp : 30
+snorlax hp : 39
+
+bulbasaur is stunned!
+snorlax used a normal attack
+bulbasaur hp : 30
+snorlax hp : 39
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+bulbasaur hp : 30
+snorlax hp : 39
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+bulbasaur hp : 30
+snorlax hp : 34
+
+snorlax used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 30
+snorlax hp : 33
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+bulbasaur used a normal attack
+bulbasaur hp : 26
+snorlax hp : 32
+
+bulbasaur is stunned!
+snorlax used a normal attack
+bulbasaur hp : 26
+snorlax hp : 32
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+bulbasaur hp : 26
+snorlax hp : 27
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+bulbasaur used a normal attack
+snorlax dodged!
+bulbasaur hp : 26
+snorlax hp : 27
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+bulbasaur hp : 26
+snorlax hp : 21
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+bulbasaur used a normal attack
+bulbasaur hp : 22
+snorlax hp : 20
+
+bulbasaur is stunned!
+snorlax used a normal attack
+bulbasaur hp : 22
+snorlax hp : 20
+
+snorlax used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 22
+snorlax hp : 19
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+bulbasaur hp : 22
+snorlax hp : 19
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+bulbasaur hp : 22
+snorlax hp : 13
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+bulbasaur used a normal attack
+bulbasaur hp : 18
+snorlax hp : 12
+
+bulbasaur is stunned!
+snorlax used a normal attack
+bulbasaur hp : 18
+snorlax hp : 12
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+bulbasaur hp : 18
+snorlax hp : 7
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+snorlax used a normal attack
+bulbasaur hp : 18
+snorlax hp : 1
+
+bulbasaur used a normal attack
+snorlax used a normal attack
+bulbasaur hp : 18
+snorlax hp : 0
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+
+
+==============================================================
+
+Battle: squirtle vs vulpix
+squirtle: hp= 60, attack= 3, defense= 5, specialDefense= 5, special= true
+vulpix: hp= 36, attack= 5, defense= 2, specialDefense= 4, special= false
+
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+squirtle used a normal attack
+vulpix dodged!
+squirtle hp : 58
+vulpix hp : 36
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+vulpix used a normal attack
+squirtle hp : 58
+vulpix hp : 32
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used a normal attack
+squirtle hp : 58
+vulpix hp : 30
+
+squirtle used a normal attack
+vulpix is stunned!
+squirtle hp : 58
+vulpix hp : 30
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+squirtle hp : 50
+vulpix hp : 28
+
+squirtle is stunned!
+vulpix is stunned!
+squirtle hp : 50
+vulpix hp : 28
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used a normal attack
+squirtle hp : 50
+vulpix hp : 26
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+vulpix is stunned!
+squirtle hp : 50
+vulpix hp : 22
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used a normal attack
+squirtle hp : 50
+vulpix hp : 20
+
+squirtle used a normal attack
+vulpix is stunned!
+squirtle hp : 50
+vulpix hp : 20
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+squirtle hp : 42
+vulpix hp : 18
+
+vulpix is stunned!
+squirtle is stunned!
+squirtle hp : 42
+vulpix hp : 18
+
+squirtle used a normal attack
+vulpix used a normal attack
+squirtle hp : 42
+vulpix hp : 18
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used a normal attack
+squirtle hp : 42
+vulpix hp : 16
+
+vulpix is stunned!
+squirtle used a normal attack
+squirtle hp : 42
+vulpix hp : 16
+
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+squirtle used a normal attack
+vulpix dodged!
+squirtle hp : 40
+vulpix hp : 16
+
+squirtle used a normal attack
+vulpix used a normal attack
+squirtle hp : 40
+vulpix hp : 16
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+squirtle hp : 32
+vulpix hp : 12
+
+vulpix used a normal attack
+squirtle is stunned!
+squirtle hp : 32
+vulpix hp : 12
+
+squirtle used a normal attack
+vulpix used a normal attack
+squirtle hp : 32
+vulpix hp : 12
+
+squirtle used a normal attack
+vulpix used a normal attack
+squirtle hp : 32
+vulpix hp : 12
+
+squirtle used a normal attack
+vulpix used a normal attack
+squirtle hp : 32
+vulpix hp : 12
+
+squirtle used a normal attack
+vulpix used a normal attack
+squirtle hp : 32
+vulpix hp : 12
+
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+squirtle used a normal attack
+vulpix dodged!
+squirtle hp : 30
+vulpix hp : 12
+
+vulpix used a normal attack
+squirtle used a normal attack
+squirtle hp : 30
+vulpix hp : 12
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used a normal attack
+squirtle hp : 30
+vulpix hp : 10
+
+squirtle used a normal attack
+vulpix is stunned!
+squirtle hp : 30
+vulpix hp : 10
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+squirtle hp : 22
+vulpix hp : 8
+
+vulpix is stunned!
+squirtle is stunned!
+squirtle hp : 22
+vulpix hp : 8
+
+vulpix used a normal attack
+squirtle used a normal attack
+squirtle hp : 22
+vulpix hp : 8
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+vulpix used a normal attack
+squirtle hp : 22
+vulpix hp : 4
+
+vulpix used a normal attack
+squirtle used a normal attack
+squirtle hp : 22
+vulpix hp : 4
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+vulpix used a normal attack
+squirtle hp : 22
+vulpix hp : 2
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+vulpix is stunned!
+squirtle hp : 22
+vulpix hp : -2
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 61, attack= 4, defense= 6, specialDefense= 6, special= true
+
+
+==============================================================
+
+Battle: vulpix vs neutrel1
+vulpix: hp= 36, attack= 5, defense= 2, specialDefense= 4, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+neutrel1 used a normal attack
+vulpix hp : 35
+neutrel1 hp : 2
+
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+vulpix dodged!
+neutrel1 is stunned!
+vulpix hp : 35
+neutrel1 hp : 0
+
+vulpix won!
+vulpix leveled up! vulpix: hp= 37, attack= 6, defense= 3, specialDefense= 5, special= false
+
+
+Battle: pikachu vs neutrel1
+pikachu: hp= 35, attack= 3, defense= 2, specialDefense= 3, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+pikachu used a normal attack
+neutrel1 used a normal attack
+pikachu hp : 34
+neutrel1 hp : 8
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+pikachu hp : 33
+neutrel1 hp : 2
+
+neutrel1 used a normal attack
+pikachu used a normal attack
+pikachu hp : 32
+neutrel1 hp : 0
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 36, attack= 4, defense= 3, specialDefense= 4, special= true
+
+
+Battle: vulpix vs neutrel2
+vulpix: hp= 37, attack= 6, defense= 3, specialDefense= 5, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+vulpix used a normal attack
+neutrel2 used a normal attack
+vulpix hp : 36
+neutrel2 hp : 15
+
+vulpix used a normal attack
+neutrel2 used a normal attack
+vulpix hp : 35
+neutrel2 hp : 10
+
+neutrel2 used a normal attack
+vulpix used a normal attack
+vulpix hp : 34
+neutrel2 hp : 5
+
+neutrel2 used a normal attack
+vulpix used a normal attack
+vulpix hp : 33
+neutrel2 hp : 0
+
+vulpix won!
+vulpix leveled up! vulpix: hp= 38, attack= 7, defense= 4, specialDefense= 6, special= false
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 36, attack= 4, defense= 3, specialDefense= 4, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+neutrel2 used a normal attack
+pikachu dodged!
+pikachu hp : 36
+neutrel2 hp : 16
+
+pikachu used a normal attack
+neutrel2 is stunned!
+pikachu hp : 36
+neutrel2 hp : 13
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 35
+neutrel2 hp : 10
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+pikachu hp : 34
+neutrel2 hp : 4
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 33
+neutrel2 hp : 1
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 32
+neutrel2 hp : -2
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 37, attack= 5, defense= 4, specialDefense= 5, special= true
+
+
+Battle: vulpix vs neutrel2
+vulpix: hp= 38, attack= 7, defense= 4, specialDefense= 6, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+vulpix used a normal attack
+neutrel2 used a normal attack
+vulpix hp : 38
+neutrel2 hp : 14
+
+neutrel2 used a normal attack
+vulpix used a normal attack
+vulpix hp : 38
+neutrel2 hp : 8
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+neutrel2 used a normal attack
+vulpix hp : 38
+neutrel2 hp : 0
+
+vulpix won!
+vulpix leveled up! vulpix: hp= 39, attack= 8, defense= 5, specialDefense= 7, special= false
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 37, attack= 5, defense= 4, specialDefense= 5, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 37
+neutrel2 hp : 16
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 37
+neutrel2 hp : 12
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+pikachu hp : 37
+neutrel2 hp : 6
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+neutrel2 used a normal attack
+pikachu dodged!
+pikachu hp : 37
+neutrel2 hp : 2
+
+pikachu used a normal attack
+neutrel2 is stunned!
+pikachu hp : 37
+neutrel2 hp : -2
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 38, attack= 6, defense= 5, specialDefense= 6, special= true
+
+
+Battle: vulpix vs pikachu
+vulpix: hp= 39, attack= 8, defense= 5, specialDefense= 7, special= false
+pikachu: hp= 38, attack= 6, defense= 5, specialDefense= 6, special= true
+
+vulpix used a normal attack
+pikachu used a normal attack
+vulpix hp : 39
+pikachu hp : 35
+
+pikachu used a normal attack
+vulpix used a normal attack
+vulpix hp : 39
+pikachu hp : 32
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+vulpix used a normal attack
+vulpix hp : 33
+pikachu hp : 29
+
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+pikachu used a normal attack
+vulpix dodged!
+vulpix hp : 33
+pikachu hp : 27
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+vulpix used a normal attack
+pikachu dodged!
+vulpix hp : 29
+pikachu hp : 27
+
+vulpix is stunned!
+pikachu used a normal attack
+vulpix hp : 29
+pikachu hp : 27
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+pikachu used a normal attack
+vulpix hp : 29
+pikachu hp : 19
+
+pikachu is stunned!
+vulpix used a normal attack
+vulpix hp : 29
+pikachu hp : 16
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+vulpix used a normal attack
+vulpix hp : 23
+pikachu hp : 13
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+vulpix used a normal attack
+pikachu dodged!
+vulpix hp : 19
+pikachu hp : 13
+
+vulpix is stunned!
+pikachu used a normal attack
+vulpix hp : 19
+pikachu hp : 13
+
+vulpix used an ability! damage=2, stun=false, dodge=true, cooldown=7
+pikachu used a normal attack
+vulpix dodged!
+vulpix hp : 19
+pikachu hp : 11
+
+vulpix used an ability! damage=8, stun=true, dodge=false, cooldown=6
+pikachu used a normal attack
+vulpix hp : 19
+pikachu hp : 3
+
+vulpix used a normal attack
+pikachu is stunned!
+vulpix hp : 19
+pikachu hp : 0
+
+vulpix won!
+vulpix leveled up! vulpix: hp= 40, attack= 9, defense= 6, specialDefense= 8, special= false
+
+
+==============================================================
+
+Battle: squirtle vs snorlax
+squirtle: hp= 61, attack= 4, defense= 6, specialDefense= 6, special= true
+snorlax: hp= 62, attack= 3, defense= 6, specialDefense= 4, special= false
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 61
+snorlax hp : 62
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 57
+snorlax hp : 62
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 57
+snorlax hp : 62
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 57
+snorlax hp : 62
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 57
+snorlax hp : 62
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 57
+snorlax hp : 58
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 57
+snorlax hp : 58
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 57
+snorlax hp : 58
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 57
+snorlax hp : 56
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 57
+snorlax hp : 52
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 57
+snorlax hp : 52
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 53
+snorlax hp : 50
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 53
+snorlax hp : 50
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 53
+snorlax hp : 50
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 53
+snorlax hp : 48
+
+snorlax is stunned!
+squirtle used a normal attack
+squirtle hp : 53
+snorlax hp : 48
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 53
+snorlax hp : 46
+
+snorlax is stunned!
+squirtle used a normal attack
+squirtle hp : 53
+snorlax hp : 46
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 49
+snorlax hp : 42
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle is stunned!
+squirtle hp : 49
+snorlax hp : 42
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 49
+snorlax hp : 40
+
+squirtle used a normal attack
+snorlax is stunned!
+squirtle hp : 49
+snorlax hp : 40
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 49
+snorlax hp : 38
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 49
+snorlax hp : 34
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 45
+snorlax hp : 32
+
+squirtle is stunned!
+snorlax is stunned!
+squirtle hp : 45
+snorlax hp : 32
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 45
+snorlax hp : 32
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 45
+snorlax hp : 32
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 45
+snorlax hp : 32
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 45
+snorlax hp : 30
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax is stunned!
+squirtle hp : 45
+snorlax hp : 26
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+snorlax dodged!
+squirtle hp : 45
+snorlax hp : 26
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 45
+snorlax hp : 26
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 45
+snorlax hp : 26
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 41
+snorlax hp : 22
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 41
+snorlax hp : 22
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 41
+snorlax hp : 22
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 41
+snorlax hp : 22
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 41
+snorlax hp : 22
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 37
+snorlax hp : 18
+
+squirtle is stunned!
+snorlax used a normal attack
+squirtle hp : 37
+snorlax hp : 18
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 37
+snorlax hp : 18
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 37
+snorlax hp : 14
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 37
+snorlax hp : 14
+
+squirtle used a normal attack
+snorlax used a normal attack
+squirtle hp : 37
+snorlax hp : 14
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle hp : 33
+snorlax hp : 10
+
+snorlax used a normal attack
+squirtle is stunned!
+squirtle hp : 33
+snorlax hp : 10
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax dodged!
+squirtle hp : 33
+snorlax hp : 10
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 33
+snorlax hp : 6
+
+snorlax used a normal attack
+squirtle used a normal attack
+squirtle hp : 33
+snorlax hp : 6
+
+snorlax used an ability! damage=4, stun=true, dodge=false, cooldown=5
+squirtle used a normal attack
+squirtle hp : 29
+snorlax hp : 6
+
+squirtle is stunned!
+snorlax used a normal attack
+squirtle hp : 29
+snorlax hp : 6
+
+squirtle used an ability! damage=4, stun=false, dodge=false, cooldown=3
+snorlax used a normal attack
+squirtle hp : 29
+snorlax hp : 2
+
+snorlax used an ability! damage=0, stun=false, dodge=true, cooldown=5
+squirtle used a normal attack
+snorlax dodged!
+squirtle hp : 29
+snorlax hp : 2
+
+squirtle used an ability! damage=2, stun=true, dodge=false, cooldown=2
+snorlax used a normal attack
+squirtle hp : 29
+snorlax hp : 0
+
+squirtle won!
+squirtle leveled up! squirtle: hp= 62, attack= 5, defense= 7, specialDefense= 7, special= true
+
+
+ion aged 55 won!

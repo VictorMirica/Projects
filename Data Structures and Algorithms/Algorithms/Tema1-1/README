@@ -1,0 +1,74 @@
+
+Mirica Victor-Nicolae 324CB
+
+        task_1_1
+    MT care shifteaza la stanga un cuvant, de atatea ori cat lungimea sa, pe casutele in care
+se afla cuvantul initial, se va nota X.
+    Marcam inceputul cuvantul cu un Y si incepem shiftarea de la finalul sau. Copiem fiecare simbol,
+punand X in locul lui initial. Simbolurile sunt mutate la inceput, in locul primului # intalnit.
+    Dupa ce am copiat tot cuvantul, Y va fi urmat de un X, asa vom stii ca am terminat copierea tuturor
+caracterelor. Mai ramane doar sa shiftam cuvantul la dreapta cu o casuta si sa stergem Y.
+
+        task_1_2
+    MT care compara un cuvant cu 5 (0b101).
+    Va trebui sa trecem doar prin primele trei caractere ale cuvantului, deoarece in cazul in care acesta
+are 4 sau mai multe caractere este automat mai mare ca 5. Similar, in cazul in care cuvantul are mai putin
+de 3 simboluri, acesta este automat mai mic.
+    In cazul in care acesta are 3, incepem testarea, dinspre ultimul caracter spre primul.
+Stim ca primul simbol este 1. Daca cel de pe pozitia 3 este si el 1, cuvantul va fi mai mare sau egal decat
+5 => scriem 1 pe banda.
+    In cazul in care al 3-lea simbol este 0, vom testa simbolul din mijloc: 1 => mai mare, 0 => mai mic.
+    La final, vom apela un rewind, dupa care vom scrie 1 sau 0\
+
+        task_1_3
+    MT care adauga 3 la un cuvant.
+    Incepem de la finalul cuvantului, pentru a adauga 3, pur si simplu adaugam 1 de trei ori la rand.
+Subrutina go(S) ne va duce la finalul cuvantului. Aceasta este apelata dupa ce adaugam un 1.
+Pentru adaugare, se va pune 1 in cazul in care gasim 0 sau # pe banda, iar daca gasim 1, acesta se va inlocui cu un 0
+si se va trece (carry) in stanga sa.
+    Dupa ultima adaugare, vom trece in accept.
+
+        task_1_4
+    MT care converteste din BIN in BCD.
+    Vom desparti bitii din BIN de cei din BCD printru-n simbol 'B', acesta va fi plasat la inceputul cuvantului.
+    Cand shiftam, shiftarea se va face cu o pozitie spre stanga.
+    Algoritmul este urmatorul: Mergem la finalul cuvantului (in BCD) si comparam grupuri de cate 4 biti cu 5.
+Din fiecare grupa vom compara primul bit, in cazul in care acesta si urmatorul sunt #, suntem indicati ca ne aflam
+la inceputul cuvantului, deci va trebui sa shiftam. Compararea cu 5 se va face similar cu task_1_2.
+In cazul in care acesta este mai mare sau egal, va trebui sa adaugam 3. Adaugarea se va face similar cu task 1_3.
+Dupa adaugare, ne intoarcem la finalul gruparii de 4 biti deoarece va urma sa parcurgem 4 pozitii spre stanga.
+    Pentru shiftare, vom folosi un caracter X, care va fi plasat in locul simbolului care este miscat.
+Dupa shiftare, acest X se va afla la finalul cuvantului, inainte de a-l sterge, testam daca la stanga lui se afla B,
+caz in care putem sa spunem ca am shiftat tot cuvantul.
+    Deoarece numerele in BCD sunt in grupe de cate 4 biti, trebuie sa pastram acest format inainte de a accepta outputul.
+De la finalul cuvantului, mergem din 4 in 4 biti, pana la final. La primul # intalnit, verificam daca avem o formatie de 
+4 #, caz in care nu trebuie sa schimbam nimic. Daca avem 1,2 sau 3 caractere # urmate de un 1, vom adauga 0-uri in locul
+acestora.
+
+
+        task_2_1
+    MT care shifteaza la dreapta un cuvant, foarte similar cu functionalitatea de la task_1_1.
+    In acest caz, vom marca finalul cu Y iar shiftarea se va face incepand cu primul bit.
+
+        task_2_2
+    MT care scade 3 dintr-un numar binar. Functionalitate similara cu task_1_3.
+    Incepem de la ultimul bit si facem trei scaderi consecutive de cate 1.
+    La final, va trebui sa formatam cuvantul deoarece putem sa avem mai multi biti 0
+in fata. Dupa ce ii curatam putem accepta.
+
+        task_2_3
+    MT care converteste din BCD in BIN.
+    Vom desparti bitii din numarul in BCD (cei care trebuie shiftati) de ceilalti, marcam aceasta cu B.
+La start, vom pune simbolul B la finalul cuvantului si vom shifta la dreapta. In cazul shiftarilor, vom sari
+peste B, acesta trebuie sa isi pastreze locul. Cand acesta nu va mai avea nimic la stanga lui, stim ca am terminat
+de shiftat. La shiftare, adaugam in pozitia bitului shiftat un 0 deoarece dorim sa pastram formatul de grupari a cate 4
+biti in stanga lui B.
+    Dupa shiftari se va face o testare, aceasta consta in parcurgerea cuvantului pana la B, de la inceput. In cazul in care
+nu dam de niciun 1, inseamna ca am shiftat tot cuvantul.
+    Comparam grupari de cate 4 biti cu 8. Aceasta comparare este foarte usoara deoarece trebuie comparat doar primul
+din cei 4 biti (8 = 0b1000). In cazul in care numarul este mai mic, trecem la urmatoare grupare, cand ajungem la B
+am comparat toate gruparile, deci va urma o shiftare la dreapta.
+    In cazul in care numarul este mai mare sau egal, vom scadea 3 intr-un mod similar cu task2_2.
+    La final, vom merge la inceputul cuvantului, vom sterge 0-urile pana la B inclusiv si vom accepta
+    Pentru acest task am modificat numarul de pasi la 7100.
+

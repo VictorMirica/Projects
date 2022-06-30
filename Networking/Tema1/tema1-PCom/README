@@ -1,0 +1,100 @@
+
+Mirica Victor - 324CB
+
+    Pentru inceput, mi-am alocat memorie pentru cache (6 intari, deoarece avem
+4 host si 2 routere). De asemenea, am creat coada "q" si am alocat tabela de rutare.
+
+    Deoarece pe tabela voi folosi cautare binara, aceasta trebuie sortata. 
+Apele functia qsort care se va folosi de functia compare, care compara doua
+elemente de tip route_table_entry, prima oara dupa prefix, iar in caz 
+de prefix egal, dupa masca.
+
+----------
+
+    Primul pas din procesul de dirijare este parsarea pachetului, asadar
+voi extrage headerul ether din payload. Pentru validarea antetului, trebuie
+sa ma asigur daca adresa destinatie este una de broadcast sau cea a routerului meu.
+Extrag adresa routerului meu cu functie get_interface_mac. Pentru a compara adrese 
+mac ma folosesc de functiile chackMac() si checkBroadcast().
+
+----------
+
+    In continuare verific tipul antetului. In cazul in care acesta este ARP (0x0806),
+extrag antetul arp din payload si verific daca am primit un request sau un reply.
+In cazul de request (op = 1), va trebui sa trimit un pachet nou arp reply.
+Imi generez un ether header nou, catre sursa de la care am primit initial pachetul.
+Aici apelez functia generateEthHeader.
+De asemenea generez si un antet nou ARP, apeland functia generateArp. 
+Pentru primele 4 campuri avem niste valori fixe. In campul op vom pune 2, codul pentru reply.
+Sursa este adresa noastra, iar targetul va fi adresa sursa a pachetului original.
+In cazul adreselor mac, acestea vor fi aceleasi ca la ether header-ul nou.
+
+    Odata create, trimit un nou pachet apeland functia sendArpPacket, pe interfata 
+pe care am primit initial pachetul m. In functia de trimitere, aloc payload-ul unui
+nou pachet (1600), in care voi copia datele din ether header, urmat de arp header.
+In final, pachetul este trimis pe interfata mentionata.
+
+    In cazul in care primim un arp reply (op = 2) trebuie sa introducem in cache,
+folosind functia insertCache, campurile spa si sha din antetul arp. 
+Adica ip-ul si adresa hardware sursa.
+
+    De asemenea trebuie sa extragem si sa trimitem pachete din coada. 
+In cazul in care aceasta nu este goala. Pentru aceasta, generam un nou antet ethernet,
+cu adresa sursa a interefetei pachetului iar ca adresa destinatara, adresa hardware 
+pe care tocmai am adaugat-o in cache.
+
+----------
+
+    Celalat caz al pachetului primit este de tipul IPv4 (0x0800). Asadar voi 
+incepe prin a extrage headerul ipv4 din payload. Daca adresa ip destinatara 
+este aceea a routerului, inseamna ca am primit un mesaj ICMP, dupa ce il 
+extrag si pe acesta din payload, verific daca este de tip echo request (type = 8).
+
+    Trebuie trimis un echo reply (type = 0 ), pentru asta trebuie sa generez 
+trei antete noi, ether, ipv4 si icmp, pe care sa le trimit. Antetul ether va fi
+similar cu cel primit, doar ca cu adresele interschimbate. In cazul atntetului IpV4,
+situatia este aceeasi, ma voi folosi de functia generateIpv4.
+Total length-ul va fi lungimea unui ip header + lungimea unui icmp header.
+Atribui protoccolul 1 (ICMP).
+Calculez checksum-ul si atribui adresa sursa si destinatie.
+
+    Pentru generarea antetului ICMP, voi folosi functia generateIcmp.
+Aceasta ne ve crea headerul cu code 0 si tip 1. De astemenea,
+deoarece trebuie trimis un echo reply, id-ul si sequence trebuie pastrate intact, ca si in 
+pachetul icmp primit. Si in acest header, calculam checksum-ul. 
+
+    Dupa ce generez toate antetele, le plasez intr-un pachet pe care 
+il voi trimite cu ajutorul functiei sendIcmp. Aceasta functie functioneaza
+intr-un mod similar su sendArpPacket(), aloca un pachet si copiaza datele din
+antetele primite in ordinea corespunzatoare.
+
+----------
+
+    Daca pachetul IPv4 nu imi este destinat routerului, atunci continui 
+protocolul prin verificarea checksum-ului. Dupa aceasta verific ca time to live
+sa fie mai mare decat 1, in caz contrar, voi trimite un ICMP timeout, intr-un
+mod similar cum am trimis si ICMP echo reply, cu tipul 11. Pachetul initial va fi aruncat.
+
+    Se va decrementa campul ttl. Trebuie sa cautam cea mai buna ruta in tabela de rutare.
+Trebuie sa dam match pe adresa destinatie din antetul IPv4. Folosim un algoritm de cautare 
+clasic: binary search. Cum tabela este sortata, trebuie doar sa ne asiguram ca (ip & masca == prefix).
+Pentru ca folosim longest prefix match, vom cauta next hop-ul cu cea mai lunga masca. 
+(Binary search va fi folosit pentru prefix, dupa ce il gasim, vom cauta iterativ masca cea mai mare).
+
+    In cazul in care nu am gasit ruta, trimitem un nou pachet ICMP unreachable, cu type 3.
+Acesta va fi trimis exact la fel ca si in cazul ICMP timeout.
+
+    Daca gasim o intrare buna in tabela de rutare, recalculam checksum-ul headerului IPv4
+dupa care cautam next hop-ul in cache. Cautarea in cache este una iterativa, care intoarce 
+indicele elementului care corespunde adresei ip. Daca gasim adresa mac care ne intereseaza 
+in cache, trebuie sa rescriem headerul L2 si sa trimitem pachetul mai departe,
+pe interfata celei mai bune rute. Antetul L2, va avea ca sursa adresa mac de pe interfata
+rutei, iar dca destinatie adresa mac pe care am gasit-o in cache.
+
+    In cazul in care nu gasim un match in cache, voi adauga pachetul original in coada.
+In realitate, adaug o copie a lui. Trebuie generat un ARP request. Pentru aceasta voi genera
+cele doua headere necesare, L2 si ARP. In cazul antetului ether, voi face broadcast, iar adresa
+hardware a sursei este adresa mac de pe interfata rutei gasite mai devreme. In cazul antetului ARP,
+adresa ip sursa este adresa ip a interfetei route, adresa target ip este adresa urmatorului hop.
+Campul op va fi 1 (request) iar campurile pentru adresele hardware o sa fie aceleasi ca si in antetul ethernet.
+La final, trimitem pachetul in broadcast, pe interfata lui best route.

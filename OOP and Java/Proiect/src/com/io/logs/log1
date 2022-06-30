@@ -1,0 +1,870 @@
+Arena: dan vs marius
+==============================================================
+
+Battle: pikachu vs neutrel1
+pikachu: hp= 45, attack= 3, defense= 6, specialDefense= 7, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+pikachu dodged!
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+pikachu hp : 45
+neutrel1 hp : 10
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 is stunned!
+pikachu hp : 45
+neutrel1 hp : 0
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 46, attack= 4, defense= 7, specialDefense= 8, special= true
+
+
+Battle: charmander vs neutrel1
+charmander: hp= 62, attack= 9, defense= 7, specialDefense= 6, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+charmander used a normal attack
+neutrel1 used a normal attack
+charmander hp : 62
+neutrel1 hp : 2
+
+charmander used a normal attack
+neutrel1 used a normal attack
+charmander hp : 62
+neutrel1 hp : -6
+
+charmander won!
+charmander leveled up! charmander: hp= 63, attack= 10, defense= 8, specialDefense= 7, special= false
+
+
+Battle: pikachu vs neutrel1
+pikachu: hp= 46, attack= 4, defense= 7, specialDefense= 8, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+pikachu used a normal attack
+pikachu hp : 46
+neutrel1 hp : 7
+
+pikachu used a normal attack
+neutrel1 used a normal attack
+pikachu hp : 46
+neutrel1 hp : 4
+
+pikachu used a normal attack
+neutrel1 used a normal attack
+pikachu hp : 46
+neutrel1 hp : 1
+
+pikachu used a normal attack
+neutrel1 used a normal attack
+pikachu hp : 46
+neutrel1 hp : -2
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 47, attack= 5, defense= 8, specialDefense= 9, special= true
+
+
+Battle: charmander vs neutrel1
+charmander: hp= 63, attack= 10, defense= 8, specialDefense= 7, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+neutrel1 used a normal attack
+charmander hp : 63
+neutrel1 hp : 3
+
+charmander used a normal attack
+neutrel1 used a normal attack
+charmander hp : 63
+neutrel1 hp : -6
+
+charmander won!
+charmander leveled up! charmander: hp= 64, attack= 11, defense= 9, specialDefense= 8, special= false
+
+
+Battle: pikachu vs charmander
+pikachu: hp= 47, attack= 5, defense= 8, specialDefense= 9, special= true
+charmander: hp= 64, attack= 11, defense= 9, specialDefense= 8, special= false
+
+charmander used a normal attack
+pikachu used a normal attack
+pikachu hp : 44
+charmander hp : 64
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+pikachu hp : 40
+charmander hp : 58
+
+pikachu is stunned!
+charmander used a normal attack
+pikachu hp : 37
+charmander hp : 58
+
+charmander used a normal attack
+pikachu used a normal attack
+pikachu hp : 34
+charmander hp : 58
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+charmander used a normal attack
+pikachu dodged!
+pikachu hp : 34
+charmander hp : 54
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander is stunned!
+pikachu hp : 34
+charmander hp : 48
+
+charmander used a normal attack
+pikachu used a normal attack
+pikachu hp : 31
+charmander hp : 48
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+pikachu used a normal attack
+pikachu hp : 24
+charmander hp : 48
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+pikachu used a normal attack
+pikachu hp : 20
+charmander hp : 48
+
+pikachu is stunned!
+charmander used a normal attack
+pikachu hp : 17
+charmander hp : 48
+
+charmander used a normal attack
+pikachu used a normal attack
+pikachu hp : 14
+charmander hp : 48
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+charmander used a normal attack
+pikachu dodged!
+pikachu hp : 14
+charmander hp : 44
+
+charmander is stunned!
+pikachu used a normal attack
+pikachu hp : 14
+charmander hp : 44
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used a normal attack
+pikachu hp : 11
+charmander hp : 38
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+pikachu used a normal attack
+pikachu hp : 4
+charmander hp : 38
+
+pikachu used a normal attack
+charmander used a normal attack
+pikachu hp : 1
+charmander hp : 38
+
+pikachu used a normal attack
+charmander used a normal attack
+pikachu hp : -2
+charmander hp : 38
+
+charmander won!
+charmander leveled up! charmander: hp= 65, attack= 12, defense= 10, specialDefense= 9, special= false
+
+
+==============================================================
+
+Battle: charmander vs neutrel2
+charmander: hp= 50, attack= 4, defense= 3, specialDefense= 2, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+charmander hp : 49
+neutrel2 hp : 16
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+neutrel2 is stunned!
+charmander hp : 49
+neutrel2 hp : 9
+
+neutrel2 used a normal attack
+charmander used a normal attack
+charmander hp : 48
+neutrel2 hp : 6
+
+charmander used a normal attack
+neutrel2 used a normal attack
+charmander hp : 47
+neutrel2 hp : 3
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+charmander hp : 46
+neutrel2 hp : -1
+
+charmander won!
+charmander leveled up! charmander: hp= 51, attack= 5, defense= 4, specialDefense= 3, special= false
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 42, attack= 5, defense= 3, specialDefense= 1, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 41
+neutrel2 hp : 14
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+bulbasaur hp : 40
+neutrel2 hp : 9
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 39
+neutrel2 hp : 5
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 38
+neutrel2 hp : 1
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 37
+neutrel2 hp : -3
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+
+
+Battle: charmander vs neutrel1
+charmander: hp= 51, attack= 5, defense= 4, specialDefense= 3, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+charmander used a normal attack
+charmander hp : 51
+neutrel1 hp : 6
+
+charmander used a normal attack
+neutrel1 used a normal attack
+charmander hp : 51
+neutrel1 hp : 2
+
+neutrel1 used a normal attack
+charmander used a normal attack
+charmander hp : 51
+neutrel1 hp : -2
+
+charmander won!
+charmander leveled up! charmander: hp= 52, attack= 6, defense= 5, specialDefense= 4, special= false
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+bulbasaur hp : 43
+neutrel1 hp : 5
+
+neutrel1 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 43
+neutrel1 hp : 0
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 44, attack= 7, defense= 5, specialDefense= 3, special= true
+
+
+Battle: charmander vs neutrel1
+charmander: hp= 52, attack= 6, defense= 5, specialDefense= 4, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+charmander used a normal attack
+neutrel1 used a normal attack
+charmander hp : 52
+neutrel1 hp : 5
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel1 used a normal attack
+charmander hp : 52
+neutrel1 hp : 1
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+neutrel1 is stunned!
+charmander hp : 52
+neutrel1 hp : -6
+
+charmander won!
+charmander leveled up! charmander: hp= 53, attack= 7, defense= 6, specialDefense= 5, special= false
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 44, attack= 7, defense= 5, specialDefense= 3, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+bulbasaur hp : 44
+neutrel1 hp : 4
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 44
+neutrel1 hp : -2
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 45, attack= 8, defense= 6, specialDefense= 4, special= true
+
+
+Battle: charmander vs neutrel2
+charmander: hp= 53, attack= 7, defense= 6, specialDefense= 5, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+charmander used a normal attack
+neutrel2 used a normal attack
+charmander hp : 53
+neutrel2 hp : 14
+
+charmander used a normal attack
+neutrel2 used a normal attack
+charmander hp : 53
+neutrel2 hp : 8
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+charmander hp : 53
+neutrel2 hp : 4
+
+charmander used a normal attack
+neutrel2 is stunned!
+charmander hp : 53
+neutrel2 hp : -2
+
+charmander won!
+charmander leveled up! charmander: hp= 54, attack= 8, defense= 7, specialDefense= 6, special= false
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 45, attack= 8, defense= 6, specialDefense= 4, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 45
+neutrel2 hp : 13
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+bulbasaur hp : 45
+neutrel2 hp : 8
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 45
+neutrel2 hp : 1
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 45
+neutrel2 hp : -5
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+
+
+Battle: charmander vs bulbasaur
+charmander: hp= 54, attack= 8, defense= 7, specialDefense= 6, special= false
+bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+
+charmander used a normal attack
+bulbasaur used a normal attack
+charmander hp : 51
+bulbasaur hp : 45
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+charmander hp : 46
+bulbasaur hp : 44
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+bulbasaur used a normal attack
+charmander hp : 43
+bulbasaur hp : 37
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used a normal attack
+charmander hp : 37
+bulbasaur hp : 36
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+charmander hp : 32
+bulbasaur hp : 35
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+bulbasaur used a normal attack
+charmander hp : 29
+bulbasaur hp : 31
+
+charmander used a normal attack
+bulbasaur is stunned!
+charmander hp : 29
+bulbasaur hp : 30
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used a normal attack
+charmander hp : 23
+bulbasaur hp : 29
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+charmander hp : 18
+bulbasaur hp : 28
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+bulbasaur used a normal attack
+charmander hp : 15
+bulbasaur hp : 24
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+bulbasaur is stunned!
+charmander hp : 15
+bulbasaur hp : 17
+
+charmander used a normal attack
+bulbasaur used a normal attack
+charmander hp : 12
+bulbasaur hp : 16
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+charmander hp : 7
+bulbasaur hp : 15
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+bulbasaur used a normal attack
+charmander hp : 4
+bulbasaur hp : 11
+
+charmander used a normal attack
+bulbasaur is stunned!
+charmander hp : 4
+bulbasaur hp : 10
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+charmander hp : -1
+bulbasaur hp : 9
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 47, attack= 10, defense= 8, specialDefense= 6, special= true
+
+
+==============================================================
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 52, attack= 5, defense= 5, specialDefense= 3, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 52
+neutrel2 hp : 14
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+bulbasaur hp : 52
+neutrel2 hp : 9
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 52
+neutrel2 hp : 5
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 52
+neutrel2 hp : 1
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 52
+neutrel2 hp : -3
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 53, attack= 6, defense= 6, specialDefense= 4, special= true
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 39, attack= 7, defense= 5, specialDefense= 7, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+pikachu used a normal attack
+pikachu hp : 39
+neutrel2 hp : 14
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+pikachu hp : 39
+neutrel2 hp : 8
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 39
+neutrel2 hp : 2
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+neutrel2 used a normal attack
+pikachu dodged!
+pikachu hp : 39
+neutrel2 hp : -2
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 40, attack= 8, defense= 6, specialDefense= 8, special= true
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 53, attack= 6, defense= 6, specialDefense= 4, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 53
+neutrel2 hp : 14
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 53
+neutrel2 hp : 9
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 53
+neutrel2 hp : 4
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 53
+neutrel2 hp : -1
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 54, attack= 7, defense= 7, specialDefense= 5, special= true
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 40, attack= 8, defense= 6, specialDefense= 8, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 40
+neutrel2 hp : 13
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 40
+neutrel2 hp : 6
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+pikachu hp : 40
+neutrel2 hp : 0
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 41, attack= 9, defense= 7, specialDefense= 9, special= true
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 54, attack= 7, defense= 7, specialDefense= 5, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 54
+neutrel2 hp : 14
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 54
+neutrel2 hp : 8
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+bulbasaur hp : 54
+neutrel2 hp : 3
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 54
+neutrel2 hp : -3
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 55, attack= 8, defense= 8, specialDefense= 6, special= true
+
+
+Battle: pikachu vs neutrel2
+pikachu: hp= 41, attack= 9, defense= 7, specialDefense= 9, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 41
+neutrel2 hp : 12
+
+pikachu used a normal attack
+neutrel2 used a normal attack
+pikachu hp : 41
+neutrel2 hp : 4
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+neutrel2 used a normal attack
+pikachu dodged!
+pikachu hp : 41
+neutrel2 hp : 0
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 42, attack= 10, defense= 8, specialDefense= 10, special= true
+
+
+Battle: bulbasaur vs pikachu
+bulbasaur: hp= 55, attack= 8, defense= 8, specialDefense= 6, special= true
+pikachu: hp= 42, attack= 10, defense= 8, specialDefense= 10, special= true
+
+bulbasaur used a normal attack
+pikachu used a normal attack
+bulbasaur hp : 51
+pikachu hp : 42
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur hp : 45
+pikachu hp : 36
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+pikachu used a normal attack
+bulbasaur hp : 41
+pikachu hp : 31
+
+pikachu used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 37
+pikachu hp : 31
+
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+bulbasaur used a normal attack
+pikachu dodged!
+bulbasaur hp : 33
+pikachu hp : 31
+
+pikachu used a normal attack
+bulbasaur is stunned!
+bulbasaur hp : 29
+pikachu hp : 31
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur hp : 23
+pikachu hp : 25
+
+pikachu used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 19
+pikachu hp : 25
+
+pikachu used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 15
+pikachu hp : 25
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+pikachu used an ability! damage=4, stun=true, dodge=true, cooldown=5
+pikachu dodged!
+bulbasaur hp : 11
+pikachu hp : 25
+
+pikachu used a normal attack
+bulbasaur is stunned!
+bulbasaur hp : 7
+pikachu hp : 25
+
+pikachu used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur used a normal attack
+bulbasaur hp : 1
+pikachu hp : 25
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+pikachu used a normal attack
+bulbasaur hp : -3
+pikachu hp : 19
+
+pikachu won!
+pikachu leveled up! pikachu: hp= 43, attack= 11, defense= 9, specialDefense= 11, special= true
+
+
+==============================================================
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 55, attack= 8, defense= 8, specialDefense= 6, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 55
+neutrel1 hp : 3
+
+neutrel1 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 55
+neutrel1 hp : -4
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 56, attack= 9, defense= 9, specialDefense= 7, special= true
+
+
+Battle: charmander vs neutrel1
+charmander: hp= 65, attack= 12, defense= 10, specialDefense= 9, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+charmander used a normal attack
+charmander hp : 65
+neutrel1 hp : -1
+
+charmander won!
+charmander leveled up! charmander: hp= 66, attack= 13, defense= 11, specialDefense= 10, special= false
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 56, attack= 9, defense= 9, specialDefense= 7, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 56
+neutrel2 hp : 12
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 56
+neutrel2 hp : 4
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 56
+neutrel2 hp : -2
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 57, attack= 10, defense= 10, specialDefense= 8, special= true
+
+
+Battle: charmander vs neutrel2
+charmander: hp= 66, attack= 13, defense= 11, specialDefense= 10, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+charmander used a normal attack
+neutrel2 used a normal attack
+charmander hp : 66
+neutrel2 hp : 8
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+charmander hp : 66
+neutrel2 hp : 4
+
+charmander used a normal attack
+neutrel2 is stunned!
+charmander hp : 66
+neutrel2 hp : -8
+
+charmander won!
+charmander leveled up! charmander: hp= 67, attack= 14, defense= 12, specialDefense= 11, special= false
+
+
+Battle: bulbasaur vs charmander
+bulbasaur: hp= 57, attack= 10, defense= 10, specialDefense= 8, special= true
+charmander: hp= 67, attack= 14, defense= 12, specialDefense= 11, special= false
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+bulbasaur hp : 50
+charmander hp : 62
+
+charmander used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 46
+charmander hp : 62
+
+bulbasaur used a normal attack
+charmander used a normal attack
+bulbasaur hp : 42
+charmander hp : 62
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+bulbasaur hp : 38
+charmander hp : 57
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+bulbasaur hp : 34
+charmander hp : 51
+
+charmander used a normal attack
+bulbasaur is stunned!
+bulbasaur hp : 30
+charmander hp : 51
+
+bulbasaur used a normal attack
+charmander used a normal attack
+bulbasaur hp : 26
+charmander hp : 51
+
+bulbasaur used a normal attack
+charmander used a normal attack
+bulbasaur hp : 22
+charmander hp : 51
+
+charmander used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 18
+charmander hp : 51
+
+charmander used an ability! damage=4, stun=true, dodge=false, cooldown=4
+bulbasaur used a normal attack
+bulbasaur hp : 14
+charmander hp : 51
+
+charmander used an ability! damage=7, stun=false, dodge=false, cooldown=6
+bulbasaur is stunned!
+bulbasaur hp : 7
+charmander hp : 51
+
+bulbasaur used a normal attack
+charmander used a normal attack
+bulbasaur hp : 3
+charmander hp : 51
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+charmander used a normal attack
+bulbasaur hp : -1
+charmander hp : 46
+
+charmander won!
+charmander leveled up! charmander: hp= 68, attack= 15, defense= 13, specialDefense= 12, special= false
+
+
+marius aged 22 won!

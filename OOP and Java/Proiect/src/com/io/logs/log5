@@ -1,0 +1,872 @@
+Arena: dan vs daniel
+==============================================================
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 42, attack= 5, defense= 3, specialDefense= 1, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+bulbasaur hp : 42
+neutrel1 hp : 5
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 42
+neutrel1 hp : 1
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+bulbasaur hp : 42
+neutrel1 hp : -5
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 42, attack= 5, defense= 3, specialDefense= 1, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 42
+neutrel1 hp : 6
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+bulbasaur hp : 42
+neutrel1 hp : 1
+
+neutrel1 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 42
+neutrel1 hp : -3
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 15
+
+neutrel2 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 10
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 5
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 0
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 44, attack= 7, defense= 5, specialDefense= 3, special= true
+
+
+Battle: bulbasaur vs neutrel2
+bulbasaur: hp= 43, attack= 6, defense= 4, specialDefense= 2, special= true
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 15
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 9
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : 4
+
+bulbasaur used a normal attack
+neutrel2 used a normal attack
+bulbasaur hp : 43
+neutrel2 hp : -1
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 44, attack= 7, defense= 5, specialDefense= 3, special= true
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 44, attack= 7, defense= 5, specialDefense= 3, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+bulbasaur hp : 44
+neutrel1 hp : 4
+
+neutrel1 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 44
+neutrel1 hp : -2
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 45, attack= 8, defense= 6, specialDefense= 4, special= true
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 44, attack= 7, defense= 5, specialDefense= 3, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 44
+neutrel1 hp : 4
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 44
+neutrel1 hp : -2
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 45, attack= 8, defense= 6, specialDefense= 4, special= true
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 45, attack= 8, defense= 6, specialDefense= 4, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 45
+neutrel1 hp : 3
+
+neutrel1 used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 45
+neutrel1 hp : -4
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 45, attack= 8, defense= 6, specialDefense= 4, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+bulbasaur hp : 45
+neutrel1 hp : 4
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+bulbasaur hp : 45
+neutrel1 hp : -1
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+
+
+Battle: bulbasaur vs bulbasaur
+bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur used a normal attack
+bulbasaur hp : 42
+bulbasaur hp : 40
+
+bulbasaur used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 38
+bulbasaur hp : 36
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur used a normal attack
+bulbasaur hp : 32
+bulbasaur hp : 32
+
+bulbasaur used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 28
+bulbasaur hp : 28
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur hp : 23
+bulbasaur hp : 23
+
+bulbasaur used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 19
+bulbasaur hp : 19
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+bulbasaur hp : 13
+bulbasaur hp : 13
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur used a normal attack
+bulbasaur hp : 8
+bulbasaur hp : 9
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+bulbasaur used a normal attack
+bulbasaur hp : 4
+bulbasaur hp : 4
+
+bulbasaur used a normal attack
+bulbasaur used a normal attack
+bulbasaur hp : 0
+bulbasaur hp : 0
+
+draw!
+==============================================================
+
+Battle: jigglypuff vs neutrel2
+jigglypuff: hp= 34, attack= 7, defense= 2, specialDefense= 3, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+jigglypuff used a normal attack
+neutrel2 used a normal attack
+jigglypuff hp : 32
+neutrel2 hp : 14
+
+jigglypuff used an ability! damage=3, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+jigglypuff hp : 30
+neutrel2 hp : 11
+
+jigglypuff used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 is stunned!
+jigglypuff hp : 30
+neutrel2 hp : 7
+
+jigglypuff used a normal attack
+neutrel2 used a normal attack
+jigglypuff hp : 28
+neutrel2 hp : 1
+
+jigglypuff used a normal attack
+neutrel2 used a normal attack
+jigglypuff hp : 26
+neutrel2 hp : -5
+
+jigglypuff won!
+jigglypuff leveled up! jigglypuff: hp= 35, attack= 8, defense= 3, specialDefense= 4, special= false
+
+
+Battle: jigglypuff vs neutrel2
+jigglypuff: hp= 34, attack= 7, defense= 2, specialDefense= 3, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+jigglypuff used an ability! damage=4, stun=true, dodge=false, cooldown=4
+neutrel2 used a normal attack
+jigglypuff hp : 32
+neutrel2 hp : 16
+
+jigglypuff used an ability! damage=3, stun=true, dodge=false, cooldown=4
+neutrel2 is stunned!
+jigglypuff hp : 32
+neutrel2 hp : 13
+
+jigglypuff used a normal attack
+neutrel2 is stunned!
+jigglypuff hp : 32
+neutrel2 hp : 7
+
+jigglypuff used a normal attack
+neutrel2 used a normal attack
+jigglypuff hp : 30
+neutrel2 hp : 1
+
+neutrel2 used a normal attack
+jigglypuff used a normal attack
+jigglypuff hp : 28
+neutrel2 hp : -5
+
+jigglypuff won!
+jigglypuff leveled up! jigglypuff: hp= 35, attack= 8, defense= 3, specialDefense= 4, special= false
+
+
+Battle: jigglypuff vs jigglypuff
+jigglypuff: hp= 35, attack= 8, defense= 3, specialDefense= 4, special= false
+jigglypuff: hp= 35, attack= 8, defense= 3, specialDefense= 4, special= false
+
+jigglypuff used an ability! damage=4, stun=true, dodge=false, cooldown=4
+jigglypuff used a normal attack
+jigglypuff hp : 31
+jigglypuff hp : 30
+
+jigglypuff is stunned!
+jigglypuff used a normal attack
+jigglypuff hp : 26
+jigglypuff hp : 30
+
+jigglypuff used a normal attack
+jigglypuff used a normal attack
+jigglypuff hp : 21
+jigglypuff hp : 25
+
+jigglypuff used an ability! damage=3, stun=true, dodge=false, cooldown=4
+jigglypuff used a normal attack
+jigglypuff hp : 18
+jigglypuff hp : 20
+
+jigglypuff used an ability! damage=4, stun=true, dodge=false, cooldown=4
+jigglypuff is stunned!
+jigglypuff hp : 14
+jigglypuff hp : 20
+
+jigglypuff is stunned!
+jigglypuff used a normal attack
+jigglypuff hp : 9
+jigglypuff hp : 20
+
+jigglypuff used a normal attack
+jigglypuff used a normal attack
+jigglypuff hp : 4
+jigglypuff hp : 15
+
+jigglypuff used a normal attack
+jigglypuff used a normal attack
+jigglypuff hp : -1
+jigglypuff hp : 10
+
+jigglypuff won!
+jigglypuff leveled up! jigglypuff: hp= 36, attack= 9, defense= 4, specialDefense= 5, special= false
+
+
+==============================================================
+
+Battle: meowth vs neutrel1
+meowth: hp= 41, attack= 6, defense= 4, specialDefense= 2, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 41
+neutrel1 hp : 9
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 41
+neutrel1 hp : 4
+
+meowth used a normal attack
+neutrel1 used a normal attack
+meowth hp : 41
+neutrel1 hp : -1
+
+meowth won!
+meowth leveled up! meowth: hp= 42, attack= 7, defense= 5, specialDefense= 3, special= false
+
+
+Battle: meowth vs neutrel1
+meowth: hp= 41, attack= 6, defense= 4, specialDefense= 2, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 41
+neutrel1 hp : 5
+
+neutrel1 used a normal attack
+meowth used a normal attack
+meowth hp : 41
+neutrel1 hp : 0
+
+meowth won!
+meowth leveled up! meowth: hp= 42, attack= 7, defense= 5, specialDefense= 3, special= false
+
+
+Battle: meowth vs neutrel2
+meowth: hp= 42, attack= 7, defense= 5, specialDefense= 3, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+neutrel2 used a normal attack
+meowth dodged!
+meowth hp : 42
+neutrel2 hp : 19
+
+neutrel2 used a normal attack
+meowth used a normal attack
+meowth hp : 42
+neutrel2 hp : 13
+
+meowth used a normal attack
+neutrel2 used a normal attack
+meowth hp : 42
+neutrel2 hp : 7
+
+meowth used a normal attack
+neutrel2 used a normal attack
+meowth hp : 42
+neutrel2 hp : 1
+
+meowth used a normal attack
+neutrel2 used a normal attack
+meowth hp : 42
+neutrel2 hp : -5
+
+meowth won!
+meowth leveled up! meowth: hp= 43, attack= 8, defense= 6, specialDefense= 4, special= false
+
+
+Battle: meowth vs neutrel2
+meowth: hp= 42, attack= 7, defense= 5, specialDefense= 3, special= false
+neutrel2: hp= 20, attack= 4, defense= 1, specialDefense= 1, special= false
+
+meowth used a normal attack
+neutrel2 used a normal attack
+meowth hp : 42
+neutrel2 hp : 14
+
+neutrel2 used a normal attack
+meowth used a normal attack
+meowth hp : 42
+neutrel2 hp : 8
+
+meowth used a normal attack
+neutrel2 used a normal attack
+meowth hp : 42
+neutrel2 hp : 2
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+neutrel2 used a normal attack
+meowth dodged!
+meowth hp : 42
+neutrel2 hp : -3
+
+meowth won!
+meowth leveled up! meowth: hp= 43, attack= 8, defense= 6, specialDefense= 4, special= false
+
+
+Battle: meowth vs neutrel1
+meowth: hp= 43, attack= 8, defense= 6, specialDefense= 4, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 43
+neutrel1 hp : 5
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 43
+neutrel1 hp : 4
+
+neutrel1 used a normal attack
+meowth used a normal attack
+meowth hp : 43
+neutrel1 hp : -3
+
+meowth won!
+meowth leveled up! meowth: hp= 44, attack= 9, defense= 7, specialDefense= 5, special= false
+
+
+Battle: meowth vs neutrel1
+meowth: hp= 43, attack= 8, defense= 6, specialDefense= 4, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+neutrel1 used a normal attack
+meowth used a normal attack
+meowth hp : 43
+neutrel1 hp : 3
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 43
+neutrel1 hp : 2
+
+meowth used a normal attack
+neutrel1 used a normal attack
+meowth hp : 43
+neutrel1 hp : -5
+
+meowth won!
+meowth leveled up! meowth: hp= 44, attack= 9, defense= 7, specialDefense= 5, special= false
+
+
+Battle: meowth vs meowth
+meowth: hp= 44, attack= 9, defense= 7, specialDefense= 5, special= false
+meowth: hp= 44, attack= 9, defense= 7, specialDefense= 5, special= false
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 39
+meowth hp : 44
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 39
+meowth hp : 39
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 38
+meowth hp : 39
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 36
+meowth hp : 37
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 34
+meowth hp : 35
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth dodged!
+meowth dodged!
+meowth hp : 34
+meowth hp : 35
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 32
+meowth hp : 33
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 32
+meowth hp : 28
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth dodged!
+meowth dodged!
+meowth hp : 32
+meowth hp : 28
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 30
+meowth hp : 26
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 28
+meowth hp : 24
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth dodged!
+meowth dodged!
+meowth hp : 28
+meowth hp : 24
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 28
+meowth hp : 19
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 27
+meowth hp : 19
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 27
+meowth hp : 18
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 25
+meowth hp : 16
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth dodged!
+meowth dodged!
+meowth hp : 25
+meowth hp : 16
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 20
+meowth hp : 16
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 20
+meowth hp : 15
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 19
+meowth hp : 15
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 17
+meowth hp : 13
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 17
+meowth hp : 12
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 17
+meowth hp : 7
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 12
+meowth hp : 7
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 12
+meowth hp : 6
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 11
+meowth hp : 6
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 9
+meowth hp : 4
+
+meowth used a normal attack
+meowth used a normal attack
+meowth hp : 7
+meowth hp : 2
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 7
+meowth hp : 1
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+meowth used a normal attack
+meowth dodged!
+meowth hp : 6
+meowth hp : 1
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+meowth used a normal attack
+meowth dodged!
+meowth hp : 6
+meowth hp : -4
+
+meowth won!
+meowth leveled up! meowth: hp= 45, attack= 10, defense= 8, specialDefense= 6, special= false
+
+
+==============================================================
+
+Battle: meowth vs neutrel1
+meowth: hp= 45, attack= 10, defense= 8, specialDefense= 6, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+meowth used a normal attack
+neutrel1 used a normal attack
+meowth hp : 45
+neutrel1 hp : 1
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+neutrel1 used a normal attack
+meowth dodged!
+meowth hp : 45
+neutrel1 hp : 0
+
+meowth won!
+meowth leveled up! meowth: hp= 46, attack= 11, defense= 9, specialDefense= 7, special= false
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 46, attack= 9, defense= 7, specialDefense= 5, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 46
+neutrel1 hp : 2
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+neutrel1 used a normal attack
+bulbasaur hp : 46
+neutrel1 hp : -3
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 47, attack= 10, defense= 8, specialDefense= 6, special= true
+
+
+Battle: meowth vs neutrel1
+meowth: hp= 46, attack= 11, defense= 9, specialDefense= 7, special= false
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+meowth used a normal attack
+neutrel1 used a normal attack
+meowth hp : 46
+neutrel1 hp : 0
+
+meowth won!
+meowth leveled up! meowth: hp= 47, attack= 12, defense= 10, specialDefense= 8, special= false
+
+
+Battle: bulbasaur vs neutrel1
+bulbasaur: hp= 47, attack= 10, defense= 8, specialDefense= 6, special= true
+neutrel1: hp= 10, attack= 3, defense= 1, specialDefense= 1, special= false
+
+bulbasaur used a normal attack
+neutrel1 used a normal attack
+bulbasaur hp : 47
+neutrel1 hp : 1
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+neutrel1 used a normal attack
+bulbasaur hp : 47
+neutrel1 hp : -5
+
+bulbasaur won!
+bulbasaur leveled up! bulbasaur: hp= 48, attack= 11, defense= 9, specialDefense= 7, special= true
+
+
+Battle: meowth vs bulbasaur
+meowth: hp= 47, attack= 12, defense= 10, specialDefense= 8, special= false
+bulbasaur: hp= 48, attack= 11, defense= 9, specialDefense= 7, special= true
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+meowth used a normal attack
+meowth hp : 42
+bulbasaur hp : 45
+
+meowth used a normal attack
+bulbasaur used a normal attack
+meowth hp : 39
+bulbasaur hp : 42
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+bulbasaur used a normal attack
+meowth dodged!
+meowth hp : 39
+bulbasaur hp : 41
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used a normal attack
+meowth hp : 33
+bulbasaur hp : 38
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+meowth dodged!
+meowth hp : 33
+bulbasaur hp : 33
+
+meowth used a normal attack
+bulbasaur used a normal attack
+meowth hp : 30
+bulbasaur hp : 30
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+bulbasaur used a normal attack
+meowth dodged!
+meowth hp : 30
+bulbasaur hp : 29
+
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+meowth used a normal attack
+meowth hp : 25
+bulbasaur hp : 26
+
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth used a normal attack
+meowth hp : 19
+bulbasaur hp : 23
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+bulbasaur used a normal attack
+meowth dodged!
+meowth hp : 19
+bulbasaur hp : 22
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+meowth dodged!
+meowth hp : 19
+bulbasaur hp : 17
+
+meowth used a normal attack
+bulbasaur used a normal attack
+meowth hp : 16
+bulbasaur hp : 14
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+bulbasaur used an ability! damage=6, stun=false, dodge=false, cooldown=4
+meowth dodged!
+meowth hp : 16
+bulbasaur hp : 13
+
+meowth used a normal attack
+bulbasaur used a normal attack
+meowth hp : 13
+bulbasaur hp : 10
+
+meowth used an ability! damage=5, stun=false, dodge=true, cooldown=4
+bulbasaur used an ability! damage=5, stun=false, dodge=false, cooldown=3
+meowth dodged!
+meowth hp : 13
+bulbasaur hp : 5
+
+meowth used a normal attack
+bulbasaur used a normal attack
+meowth hp : 10
+bulbasaur hp : 2
+
+meowth used an ability! damage=1, stun=false, dodge=true, cooldown=3
+bulbasaur used a normal attack
+meowth dodged!
+meowth hp : 10
+bulbasaur hp : 1
+
+meowth used a normal attack
+bulbasaur used a normal attack
+meowth hp : 7
+bulbasaur hp : -2
+
+meowth won!
+meowth leveled up! meowth: hp= 48, attack= 13, defense= 11, specialDefense= 9, special= false
+
+
+dan aged 41 won!

@@ -1,0 +1,133 @@
+
+324CB Mirica Victor - Tema 1
+
+Pentru citire/scriere in fisier am folosit scheletul de laborator.
+La citire am folosit un BufferedReader, la scriere un PrintWriter.
+
+
+    Problema 1: Walsh
+
+Pentru problema Walsh am observat o similaritate intre aceasta si problema Z-Parcurgere.
+Am o functie ajutatoare in_rectangle, care primeste un punct (x,y), si doua colturi,
+stanga-sus si dreapta-jos si indendtifica daca acel punct se afla in patrat.
+
+Folosim paradigma Divide et Impera. Verificam in care dintre cele 4 cadrane ale
+matricii se afla punctul (x,y). De asemenea, se va folosi si o variabila "neg",
+initializata cu 0, care va numara de cate ori am mers in dreapta-jos, unde elementele
+matricii sunt negate. La fiecare mutare, impartim n la 2. Cand ajungem la un  singur element,
+verificam daca acesta este 0 sau 1 prin testarea valorii neg. Daca aceasta este para, intoarcem
+0, daca aceasta este impara, intoarcem 1.
+
+Din laborator parcurgere Z:
+T = O(n).
+log4(2n) = (1 / 2)log2(2n) = (1 / 2)n
+
+
+    Problema 2: Statistics
+
+Folosesc doua functii ajutatoare, getLetters() si getNumberOfLetters(). Care intorc
+literele unice dintr-un string, respectiv numarul de aparitii al unei litere c intr-un
+string.
+
+Pentru inceput, voi avea nevoie de o lista de litere folosite pentru a creea toate cuvintele.
+Pentru aceasta, voi concatena toate cuvintele si voi apela functia getLetters.
+
+Pentru fiecare litera, voi crea un tabel de valori, ce va repartiza o valoare fiecarui cuvant.
+Litera cautata va adauga +1 la valoarea totala (initial 0), celelalte litere vor adauga -1.
+Pentru ca un cuvant sa satisfaca conditia, acesta va trebui sa aiba valoarea mai mare sau
+egala cu 1.
+
+Ma voi utiliza de o tehnica de tip greedy. Ideea principala este ca, in cazul in care un numar de
+cuvinte respecta conditia (au o litera dominanta), atunci si stringul concatenat de ele va
+respecta conditia.
+
+Odata ce avem tabela de valori, problema incepe sa semene cu Simple Task, in care doar verificam daca
+urmatoarea valoare de va duce valoarea totala a stringului la un numar mai mic decat 1.
+
+Asadar, cum eu am nevoie de cele mai multe cuvinte, voi sorta tabela de valori in ordine descrescatoare.
+Incep sa adaug valorile pozitive intr-o variabila de totalValue.
+Valorile nule se vor adauga si ele.
+Dupa aceasta, vom adauga valorile negative pana cand valoarea mea totala va fi cat mai aproape de 1.
+
+De fiecare data cand adaug o valoare, maresc count-ul de cuvinte. Voi avea si o variabila maxCount
+pe care o voi intoarce. Aceasta va retine cel mai mare count, indiferent de litera.
+
+Complexitate:
+    Append la toate cuvintele: O(n)
+
+    makeValueTable() : O(n)
+
+    sortare tabela de valori: O(n*log(n))
+    (In java, Collections.sort(), din documantatie:
+    The sorting algorithm is a modified mergesort)
+
+    Adaugarea valorilor : O(n)
+
+    Asadar: O(n) + O(n) + O(n) + O(n*log(n)) = O(n*log(n))
+
+
+    Problema 3: Prinel
+
+Pentru aceasta problema voi avea nevoie de un vector care contine operatiile necesare pentru
+fiecare numar.
+
+Odata ce avem acest vector, problema devine identica cu cea a rucsacului discret:
+Greutate totala = k (numar total de miscari posibile)
+Vector de valori = p (vector de puncte)
+Vectorul de greutati = op (vectorul de operatii necesare la fiecare element din target)
+
+Asadar, vom folosi tehnica de programare dinamica. Si algoritmul clasic pentru problema rucsacului
+discreta, cu o complexitate de O(n*k)
+
+Pentru algoritmul de determinare a vectorului ce contine numarul de operatii necesare fiecarui element
+vom cauta elementul maxim din lista target. Acesta va reprezenta lungimea vectorului op.
+La fiecare pozitie din vectorul op, vom avea numarul de operatii necesare numarului reprezentat de acel index.
+
+Pentru inceput stim ca op[1] = 0
+Vom trece prin fiecare element in parte si ii vom gasi divizorii. Pentru gasirea divizorilor, folosesc
+metoda getDivisors, care itereaza prin numarul n de la 1 la radical din n. Asadar, la fiecare pas, vom
+adauga doi divizori in lista.
+In continuare, sortez crescator array-ul de divizori.
+Folosind programare dinamica, voi atribui valori in vectorul de operatii.
+iterand divizorii, voi avea variabila x egala cu (i + divisors.get(j)).
+Deci, incercam sa adunam fiecare divizor, al numarului la el insusi.
+Dupa ce verific ca aceasta variabila sa fie mai mica decat maximul, voi introduce
+in vectorul de operatii minimul dintre doua valori: numarul de operatii pentru x
+sau numarul de operatii pentru i, la care adaugam 1. (Deoarece am adaugat un singur divizor, incrementam numarul
+de operatii).
+De mentionat faptul ca vectorul va fi initializat cu un numarul maxim pe fiecare pozitie.
+
+Complexitate:
+
+Rucsac O(n*k)
+Algoritm pentru vectorul de operatii O(max)
+
+Complexitate totala: O(n*K)+O(max)
+max = numarul maxim din vectorul target
+
+
+    Problema 4: Crypto
+
+Problema se va rezolva cu programare dinamica, la fiecare pas voi avea:
+    i (0 to n) care reprezinta numarul de litere din cheie pentru care verificam secventele
+    j (0 to l) care reprezinta numarul de litere din secventa pentru care calculam numarul de aparitii.
+
+Tiparul problemei seamana cu problema "DP or Math?" din laboratorul 4. In acea problema vedeam cate
+subsiruri pare/impare avem intr-un vector.
+De exemplu, in cazul in care litera din k la care ma aflu este '?'
+aceasta poate lua orice valoare, asadar vom inmulti solutia precedenta cu numarul de litere. Similar, la
+problema cu subsirurile pare, de fiecare data cand aparea un numar par, puteam sa il "adaug" la fiecare subsir
+par deja observat.
+Asadar, vom trece prin fiecare litera din k, inclusiv '?', daca aceasta da match cu litera la care ne aflam din s,
+putem sa crestem numarul de solutii de la step-ul dp[i+1][j].
+
+Complexitate: O(n)
+
+
+Referinte:
+    Laboratoare si cursuri (in principal)
+    Am cautat informatii suplimentare despre algoritmii prezentati la laborator
+    pe internet (Wikipedia, StackOverflow, GeeksForGeeks)
+    (In principal informatii despre complexitati)
+    Discutii referitoare la probleme din cod cu colegi/laboranti
+    (Erori, probleme de timeout)
