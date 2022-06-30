@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Apr  7 18:01:01 2022
+# Process ID: 17816
+# Current directory: C:/Users/student/Desktop/Stefan/Aparat_racoritoare
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8704 C:\Users\student\Desktop\Stefan\Aparat_racoritoare\Aparat_racoritoare.xpr
+# Log file: C:/Users/student/Desktop/Stefan/Aparat_racoritoare/vivado.log
+# Journal file: C:/Users/student/Desktop/Stefan/Aparat_racoritoare\vivado.jou
+# Running On: DESKTOP-620LK0K, OS: Windows, CPU Frequency: 1704 MHz, CPU Physical cores: 6, Host memory: 8434 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/student/Desktop/Stefan/Aparat_racoritoare/Aparat_racoritoare.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim
+launch_simulation
+source simulation.tcl
+close_sim

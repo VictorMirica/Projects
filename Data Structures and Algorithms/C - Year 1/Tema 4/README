@@ -1,0 +1,56 @@
+Task 1
+    Incepem prin a numara numarul de unitati ale inputului. formam matricea atribuind fiecarui element, linie cu linie, incepand cu inputul inmultit cu 10 la puterea numarului de unitati
+    adunat cu numarul coloanei. Odata ce am terminat linia, scadem 1 din copia inputului.
+    Dupa ce am creeat matricea, o plasez cifra cu cifra intr-un buffer, dupa fiecare coloana pun ' ' si dupa fiecare rand, '\n'.
+
+Task 2
+    Variabila panam, initializata cu 0, reprezinta parametru aceasta va lua indexul fiecarui numar, de dupa '_', din input. Citim inputul caracter cu caracter, de fiecare data cand
+    intampinam '_' sau '\n' adaugam la variabila sum (suma) numarul de dinaintea caracterului '_' (resp. '\n') folosind functia atoi, dupa care ii atribnuim lui param pozitia de dupa '_'.
+
+Task 3
+    Avem doua varinte, cand vectorul este par sau impar, primul numar din vector reprezinta numarul de elemente. Testam daca primul numar este par sau impar. 
+    In cazul de paritate inversam elementele intre ele, doua cate doua. luam doua contoare i si j, initializate cu 1 respectiv 2, pe care le incrementam cu 2 la fiecare inserare.
+    Intr-un vector nou plasam elementele in ordinea corecta.
+    In cazul de imparitate plasam in alt vector elementele in ordine inversa. 
+    Dupa inversare, plasam elementele in char* output, cu spatiu intre ele.
+
+Task 4
+    Alocam structurii player, name, color si hat memoria necesara. Schimbam valoare lui alive in 1.
+    Alocam structurii game si name memoria necesara.
+
+Task 5
+    
+    ReadPlayer
+        Alocam structura player.
+        Atribuim campurilor name, color si hat valorile necesare din fisier. Plasam null terminatorul '\0' la final.
+        Atribuim valoare campului numberOfLocations si alocam vectorul location. Pentru fiecare locatie, citim x si y, celelalte caractere din fisier '(' ')' ' ' ',' sunt puse intr-un 
+        vector "trash".
+        Citim rolul. In functie de a doua litera a stringului care reprezinta rolul, atribuim campului playerRole valoare potrivita. In functie de rol, atribuim abilitatea.
+
+    ReadGame
+        Alacom structura game.
+        Citim campurile nume, killRange si numberOfCrewmates.
+        Alocam campul crewmates.
+        Utilizam functia ReadPlayer pentru fiecare jucator, si introducem structura in vectorul crewmates
+
+    (Dintr-un motiv anume, a trebuit sa citesc de doua ori campurile "numberOfLocations" si "numberOfCrewmates" pentru ca functia fscanf sa le preia.)
+
+Task 6
+    WritePlayer
+        Scriem campurile, name, hat si color. pentru acestea am observat ca unele teste nu au null terminatorul la final, asa ca testam daca ultima litera este [a-z], in caz contrar 
+        plasam null terminatorul.
+        Scriem playerRole si toate coordonatele locatiilor
+
+    WriteGame
+        Scriem numele jocului, kill range, numarul de crewmates. 
+        Dupa asta, pentru fiecare crewmate apelam functia WritePlayer. In final, apelam WritePlayer si pentru impostor
+
+Task 7
+    Introducem in buffer-ul pentru output numele impostorului. Alegem variabila killIndex, initializata cu "-1", aceasta reprezinta indexul urmatoarei "tinte" ale impostorului.
+    Parcurgem lista cu crewmates. calculam distanta folosind formula |x1-x2| + |y1-y2|. Daca distanta curenta dintre crewmate si impostor este mai mica decat distanta minima, initializata
+    cu killRange, si crewmate-ul este in viata (alive = 1) atunci avem un nou killIndex si o noua distanta minima. 
+    Dupa ce aflam tinta perfecta, schimbam valoarea alive a crewmate-ului la 0 si adaugam text-ul necesar in output. Daca nu am gasit pe nimeni (killIndex = -1), vom adauga textul respectiv.
+
+Task 8 
+    Parcurgem lista de crewmates. In cazul in care acesta e mort, scriem aceasta si trecem la urmatorul. In caz contrar, il trecem la urmatoarea locatie (daca este la ultima, resetam indexul)
+    In final, ii folosim abilitatea si o scriem in fisier. Dupa ce lista a trecut prin crewmates, facem acelasi lucru si pentru impostor.

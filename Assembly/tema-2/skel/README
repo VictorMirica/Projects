@@ -1,0 +1,64 @@
+Mirica Victor-Nicolae 324CB
+
+      
+        rotp.asm
+    Plasam in registrul al caracterele din paintext, incepem de la adresa lui esi si incrementam registrul.
+In registrul bl plasam key, incepand cu adresa ultimului caracter edi + ecx - 1. (key[len-1]). vom decrementa ecx.
+facem xor intre cele doua registre si plasam rezultatul in edx, dupa care il incrementam. In cazul in care ecx (len) 
+a ajuns la 0, am terminat de iterat vectorii.
+
+   
+        ages.asm
+    Incepem sa iteram vectorul cu varste si cel cu date. Tinem indexul in eax, incepand cu 0. Cand acesta ajunge sa 
+fie egal cu len (edx) atunci am terminat de iterat.
+    In ebx si eax vom plasa anul datii de nastere respectiv al anului curent. Comparam cei doi ani. In cazul in care
+anul curent este mai mic, vom plasa 0 in vectorul de varste (acesta va fi incrementat din 4 in 4).
+    In cazul in care anul este mai mare, trebuie sa comapram datile. Comparatia este similara cu cea a anului doar ca 
+acum vom folosi registrele pe 16 biti (bx, ax). In cazul in care luna curenta este mai mare, plasam diferenta dintre cei
+doi ani in vector. In cazul in care luna curenta este mai mica, va trebui sa decrementam diferenta. In cazul lunilor
+egale, vom face o comparatie finala intre cele doua zile.
+
+
+        columnar.asm
+    Incepem prin a calcula ceil(len_heystack/len_cheie). Pastram acest numar in al. Facem impartirea 
+celor doua, urmand sa incrementam numarul (ceil) daca avem rest.
+    Tinem cont de pasul la care suntem in ecx. In cazul in care acesta este egal cu lungimea cheii, am ajuns
+la finalul algoritmului. Algoritmul pe care il vom folosi (in pseudocod) esde de forma:
+
+    for pas(ecx) 0 to l_key
+        for i(dl) 0 to ceil(l_plain/l_key)(al)
+            cipher[j] = haystack [i*l_key  + key[pas]]   
+            j++
+
+    Pentru fiecare pas, vom itera de la 0 la al. Vom inmulti i(dl), cu lungimea cheii. La aceasta vom aduna
+valoarea de la key[pas] (key va fi iterat din 4 in 4 octeti). Luam valoarea octetului de la aceasta pozitie in 
+haystack si o comparam cu 0 (null terminator) sau alt caracter nedorit. La final, incrementam cipher si i. 
+Stim ca caracterul poate fi 0 doar cand am ajuns la finalul pasului curent, asadar trebuie doar sa sarim peste
+inserarea acestuia in ciphertext(ebx).
+
+
+        cache.asm
+    In edx vom pastra pentru inceput tagul, asadar shiftam adresa la dreapta cu 3 biti (bitii de offset).
+Vom itera vectorul de tags folosind registrul esi (1 to 100). in cazul in care gasim tag-ul vom trece la eticheta
+found.
+    In cazul found, vom prelua offsetul adresei initiale prin shiftarea la stanga dupa care la dreapta cu 29 de biti.
+Trebuie sa aducem din cache[i][offset] in registru. In acest caz, il avem pe i in esi (pozitia la care am gasit tag).
+Dupa ce face rost de offset, putem sa il adaugam adresei cache (ecx). Inmultim i cu 8 (CACHE_LINE_SIZE) 
+si adaugam de asemenea rezultatul la cache. Am ajuns la locatia din memorie dorita. Tot ce trebuie sa facem este 
+sa mutam octetul de la aceasta adresa in eax. Ne folosim de registrul dl.
+    In cazul in care iteram tot tags si nu gasim tag-ul cautat, vom sari la eticheta notfound.
+    In cazul notfound, incepem prin a calcula index-ul cache-ului la care trebuie sa introducem cei 8 octeti.
+adresa aceasta se calculeaza similar ca si in cazul 'found', doar ca in loc de i avem to_replace, aflat in edi.
+Urmeaza sa scriem cei 8 octeti. Ne vom folosi de registrul esi pentru a tine cont daca am terminat de introdus octetii
+(esi = 0 to 8). Scriem octeti incepand de la adresa initiala shiftata la dreapta de 3 ori dupa care dinnou la stanga.
+Plasam acesti octeti in adrese consecutive din ecx.
+    Mai avem scris tag-ul in vectorul tags. Obtinem tagul shiftand adresa originala de 3 ori la dreapta. mutam aceasta 
+adresa in pozitia to_replace (edi) din vectorul de tags (ebx).
+    Ultimul lucru pe care il mai avem de facut este sa scriem si in registru. Trebuie scris octetul de la
+cache[to_replace][offset]. Modul de scriere este foarte similar cu cel in cazul 'found', inlocuind i-ul cu to_replace.
+
+    
+    Pe parcursul temei nu am folosit variabile globale. Am folosit comenzile push si pop pe diferite registre.
+M-am ajutat de stack pentru a pastra valoarea registrelor in cazul in care am nevoie sa le folosesc cu alt scop.
+Exemplu: push eax => Inmultiri folosind eax => pop eax
+

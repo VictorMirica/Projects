@@ -1,0 +1,52 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare2_behav xil_defaultlib.simulare2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 33 for port 'number1_0' [C:/Users/student/Desktop/VMLabCN/lucrare5/testlab5.srcs/sim_1/new/simulare2.v:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.design_1_adun_scad_0_0
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.design_1_ajustare_0_0
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.design_1_alege_0_0
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.design_1_aliniere_0_0
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.design_1_compara_0_0
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.design_1_concatenare_0_0
+Compiling module xil_defaultlib.extragere
+Compiling module xil_defaultlib.design_1_extragere_0_0
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.design_1_norm_0_0
+Compiling module xil_defaultlib.refacere
+Compiling module xil_defaultlib.design_1_refacere_0_0
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.design_1_registru16_0_0
+Compiling module xil_defaultlib.design_1_registru16_1_0
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.design_1_registru24_0_0
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.design_1_registru26_0_0
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.design_1_registru48_0_0
+Compiling module xil_defaultlib.design_1_registru48_1_0
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.design_1_registru57_0_0
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.design_1_registru8_0_0
+Compiling module xil_defaultlib.design_1_registru8_1_0
+Compiling module xil_defaultlib.design_1_registru8_2_0
+Compiling module xil_defaultlib.rezultatFinal
+Compiling module xil_defaultlib.design_1_rezultatFinal_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.simulare2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare2_behav

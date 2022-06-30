@@ -1,0 +1,69 @@
+Mirică Victor-Nicolae 324CB
+
+        Functia touch:
+    Functie care primeste ca parametru directorul in care vom creea fisierul si numele noului fisier. Fisierul trebuie introdus la finalul listei
+    de fisiere asadar, iteram prin aceasta lista, verificand daca acesta deja exista si de asemenea pastrand un pointer catre ultimul element.
+    Odata gasit, in cazul in care acesta nu exista, putem sa alocam memoire si sa initializam campurile noului fisier. De asemenea vom testa daca
+    acesta este primul fisier al directorului, caz in care va deveni capul listei. Daca acesta este pur si simplu un alt fisier, facem legatura intre fostul
+    final al listei si noul fisier creeat.
+
+        Functia mkdir:
+    Functionalitate similara cu functia touch(), singurele diferente sunt faptul ca de aceasta data se va itera lista de directoare, iar in cazul initializarii campurilor,
+    avem doua campuri noi, head_children_dirs si head_children_files, pe care le vom initializa cu NULL.
+
+        Functia ls:
+    Aceasta functie este folosita pentru afisarea tuturor directoarelor si fisierelor din directorul dat ca parametru, in aceasta ordine. Afisarea se va face cu un 
+    director/fisier pe fiecare linie. Pur si simplu iteram cele doua liste, afisand fiecare element urmat de un '\n'.
+
+        Functia rm:
+    Aceasta functie sterge un fisier (In cazul in care acesta exista), din directorul dat ca parametru. Iteram lista de fisiere si comparam fiecare instanta cu numele 
+    fisierului care trebuie sters. In caz ca acesta nu este gasit, se va afisa mesajul corespunzator. In cazul in care acesta este gasit, se vor recreea legaturile din lista.
+    Pentru aceasta trebuie sa tinem in memorie un poiner la ultimul fisier (la fisierul de dinaintea celui ce trebuie sters). In cazul in care acesta este NULL, inseamna ca suntem
+    la inceputul listei, asadar vom modifica campul head_children_files al directorului parinte. In caz contrar, modificam legatura de la fisierul de dinainte, la fisierul urmator.
+    (sau NULL). Eliberam memoria alocata la creeare.
+
+        Functia rmdir:
+    Ca si in cazul touch() si mkdir(), cele doua functii functioneaza similar, afisand un mesaj in cazul in care directorul nu e gasit, si schimband legaturile din lista aferenta.
+    Diferenta in acest caz este faptul ca trebuie sa eliberam memoria  ocupata de toate fisierele si directoarele din directorul ce trebuie sters, asadar inainte sa eliberam memoria
+    alocata de directorul cautat (similar ca la rm), vom itera mai intai lista de fisiere a directorului, apeland functia rm iar apoi vom itera si lista de directoare, apeland recursiv
+    functia rmdir.
+
+        Functia cd:
+    Aceasta functie schimba directorul current, care va fi schimbat cu ajutorul parametrului target, in directorul cu numele primit cu ajutorul parametrului name.
+    In cazul in care "name" este "..", trebuie sa schimbam directorul curent in parintele sau. In cazul in care parintele acestuia nu este NULL (ne aflam in root/home),
+    vom face schimbarea dupa care vom opri functia. Daca name nu este "..", directorul cu acest nume trebuie gasit in lista de directoare a lui target. Iterand lista si 
+    comparand numele fiecarui director cu parametrul name, putem sa schimbam directorul de lucru, sau sa afisam mesajul aferent in cazul in care acesta nu a fost gasit.
+
+        Functia pwd:
+    Aceasta functie afiseaza path-ul de la root, pana in directorul curent. Pentru aceasta vom itera prin "parintii" tutror directoarelor, pana ajungem la root.
+    Alocam doua stringuri, unul care va fi path-ul intors, si un string ajutator, caruia ii vom elibera memoria alocata la finalul functiei. 
+    Am decis sa folosesc functia sprintf() pentru a concatena, director cu director, la inceputul stringului, un nou nume la fiecare iteratie din loop.
+
+        Functia stop:
+    Functia care va opri rularea programului. Rolul acesteia este de a elibera memoria alocata. Functia va fi apelata cu directorul home (root), a carui
+    liste de fisiere si directoare se vor itera, apeland functiile rm respectiv rmdir. In final, se va elibera si memoria alocata de home.
+
+        Functia tree:
+    Aceasta functie trebuie sa afiseze directoarele si fisierele din directorul primit ca si parametru, ca un arbore. Functia primeste un al doilea parametru, level
+    care reprezinta "nivelul" de adancime in care ne aflam. Intial, functia va fi apelata cu parametrul 0, iar de fiecare data cand aceasta va fi apelata recursiv
+    level se va incrementa. Parametrul reprezinta numarul de caractere " " (spatiu), care vor fi afisate la inceputul randului, la fiecare nivel in parte (4 caractere per level).
+    Iteram lista de directoare, afisand numarul de spatii corespunzator, urmat de numele directorului dupa care apelam recursiv functia tree(). Iteram si lista de fisiere, afisand
+    numarul de spatii necesar precum si numele fisierului.
+
+        Functia mv:
+    Aceasta functie schimba numele unui fisier/director, si il trece pe acesta la finalul listei respective. Functia primeste trei parametrii, directorul parinte, numele vechi si 
+    numele nou. Pentru inceput, iteram prin cele doua liste pentru a testa daca exista vreun fisier/director care deja are numele nou, caz in care vom afisa un mesaj corespunzator.
+    In continuare, cautam in cele doua liste fisierul/directorul cu numele vechi. In cazul in care il gasim refacem legaturile intre fisierul/directorul de dinainte (sau capul listei daca este cazul)
+    si urmatoarul element din lista. Elementul trebuie pus la finalul listei, dupa ce ii schimbam numele. In cazul in care acesta nu a fost gasit, se va afisa un mesaj corespunzator.
+
+
+        Functia main() si rularea programului:
+    Pentru inceput vom initializa un flag stops cu 0, cand acest flag este 1 (la apelarea functiei stop()), vom opri programul. De asemenea alocam si intializam directorul home.
+    Vom creea un pointer Dir, care va avea valoare directorului de lucru, initial, acesta va pointa catre home. Alocam memorie pentru cele trei string-uri pe care le vom folosi
+    sa preluam comenzile din linia de comanda. (Un string pentru comanda si alte doua pentru argumentele necesar, daca este cazul).
+    Cat timp stops este 0, programul va rula, asteptand input din linia de comanda. Primul cuvant primit va fi preluat in string-ul "comanda". Odata primit, acest string va fi
+    comparat cu posibilele comenzi, care vor apela functiile explicate mai sus. In majoritatea comenzilor, vom prelua inca un argument din linia de comanda, tot cu functia scanf().
+    (mai putin in cazul comenzilor ls, tree, stops si pwd care nu mai au niciun argument in plus, si al comenzii mv, care trebuie sa primeasca doua argumente)
+    Daca "comanda" primita este "pwd", stringul intors de apelarea functiei pwd() va fi pastrat intr-un pointer, care dupa afisare va fi eliberat.
+    In cazul comenzii stop, setam flagul de oprire al programului la 1, eliberam cele trei stringuri folosite la input si apelam functia stop(home), dupa apelarea acesteia programul 
+    se va termina.

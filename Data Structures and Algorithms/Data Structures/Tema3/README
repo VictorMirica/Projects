@@ -1,0 +1,81 @@
+MIRICA Victor - 315CB
+
+Punctaj teste:
+    Total: [135/135]
+    Bonus: [20/20]
+
+Functii folosite la implementarea arborelui trie (functiiArb.c):
+
+        Functia indexAlfabet:
+    In parcurgerea programului, folosim alfabetul "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-'?! ".
+    Aces alfabet este pastrat intr-un vector de tip char. Functia primeste un char si intoarce indexul acestuia din alfabet.
+        Functia ConstrNod:
+    Aceasta functie creeaza un nod. Aloca memorie si seteaza campurile de info si de character ale acestuia la NULL.
+        Functia Insert:
+    Functie care insereaza un string intr-un arbore si care seteaza campul info al nodului respectiv ultimului caracter din stringul primit.(Acest pointer va fi fie
+    catre o structura de tip carte(T1 si T), fie catre un alt arbore(T2)).
+    Creez noduri pentru fiecare litera consecutiva care nu exista. La final, setez pointerul info.
+        Functia findString:
+    Cauta un string in arbore si intoarce informatia de la finalul sau. Functia poate sa gaseasca un string care nu are nicio informatie la final. In acest caz, se va
+    intoarce NULL. Dupa ce cautam nod cu nod (litera cu litera) si ajungem la finalul sirului de caractere. Verificam daca campul hasInfo al celulei finale este 1 sau 0.
+        Functia lexicografic:
+    Aceasta functie cauta intr-un arbore informatiile, in ordine. Al doilea argument al functiei ne indica a cata informatie din arbore (in ordine lexicografica) o vrem intoarsa.
+    Parcurgem recursiv arborele si testam daca fiecare nod are campul hasInfo = 1. In caz pozitiv, am gasit un nod cu o informatie. Vom testa daca al doilea argument este 0.
+    Egalitatea lui "which" cu 0 ne indica ca am ajuns la informatia dorita. Daca which este diferit de 0, il scadem, dar sarim peste nodul cu informatia.
+        Functia autoComplete:
+    Aceasta functie primeste un arbore, un string (Acest string va fi in general o parte dintr-un string complet, care se afla in arbore). De asemenea functia mai primeste si argumentul
+    which, similar ca la functia lexicografic. Dupa ce am parcurs stringul pana la final, apelam functia lexicografic pe subarborele la care am ajuns.
+        Functia printArb:
+    Functie recursiva care scrie in fisierul out, arborele arb. Se foloseste de functia generica f pentru a face scrierea, in cazul in care nodul are informatie in el.
+        Functia hasChildren:
+    Intoarce 1 daca nodul primit are cel putin un fiu.
+        Functia elimString:
+    Functie recursiva care elimina un string dintr-un arbore. Cat timp nu ajungem la finalul stringului, se vor face 4 verificari pentru fiecare nod:
+    Celula curenta si celula literei urmatoare trebuie sa fie diferite de NULL. De asemenea, deoarece nu suntem la finalul stringului, vom elibera celula doar in cazul
+    in care aceasta nu retine un pointer catre alta informatie. Daca toate testele sunt trecute, vom elibera celula doar daca aceasta nu are alti fii.
+    Pentru celula finala (ultima litera a stringului), trebuie sa eliberam si informatia acesteia. In cazul in care aceasta nu are alti fii, eliberam celula si informatia.
+    In cazul in care aceasta are si alti fii, eliberam doar informatia din ea, folosindu-ne de o functie generica de eliberare, primita ca argument.
+        Functia distruge:
+    Functie recursiva care distruge un arbore, elibereaza elementele folosindu-se de o functie generica primita ca argument. De asemenea elibereaza si memoria nodurilor.
+        Functia DistrArb:
+    Functie apelata pentru eliberarea memoriei unui arbore intreg, pe langa apelarea functiei distruge(), seteaza pointer-ul arborelui spre NULL.
+
+Functiile din main.c si parcurgerea programului(main.c):
+        Functiile freeCarte, freeArb si freeT2:
+    Aceste 3 functii sunt folosite drept functii de eliberare a memoriei alocate. In cazul cartii, apelam pur si simplu free pe structura primita.
+    In cazul freeArb, folosim functie de distrugere, distrArb(). Functia freeT2 intoarce 1, aceasta este folosita pentru distrugerile arborilor de carti 
+    respectivi fiecarui autor din T2, in cazul in care am eliminat deja memoria alocata de aceste carti, din T1.
+        Functiile autoCompleteCarte si autoCompleteAutor:
+    Aceste functii trebuie sa scrie in fisier primele trei carti/autori care incep cu un string dat. In cazul in care nu se gaseste nimic, se va afisa
+    un mesaj corespunzator, din aceasta cauza am ales sa iau un int nuExista = 1, care se va face permanent 0 in cazul in care gasim chiar si o valoare.
+    Deoarece trebuie sa scriem trei titluri/autori, vom apela de 3 ori functia de auto-complete. Deoarece dorim ca aceste trei valori sa fie primele valori,
+    lexicografic, vom apela functiile cu un contor i = 0,1,2. Functiile de autocomplete intorc informatia gasita, In cazul cartii aceasta va fi o structura de tip
+    carte, din care putem sa scoatem usor titlul ei folosind campul "titlu". In cazul autorilor, cautarea se va face in T2, asadar informatia primita va fi un alt arbore de tip trie.
+    In acest caz, nu avem numele autorului asadar vom cauta in arborele primit prima carte(nu conteaza a cata, am ales prima pentru siguranta), din aceasta structura intoarsa
+    putem sa extragem numele autorului prin campul "autor".
+        Functia printCarte:
+    Functie folosita pentru a scrie titlul unei carti intr-un fisier, ambele sunt primite ca argument.
+        Functia main:
+    Pentru inceput vom testa daca functia a fost apelata corect din linia de comanda, avem nevoie de 3 argumente. Dupa asta, deschidem fisierele de intrare si de iesire si
+    creem cei doi arbori trie. 
+    Incepem sa citim fisierul de intrare. Primul cuvant de pe fiecare linie va fi retinut in sirul de caractere "comanda". In functie de aceasta comanda, se vor apela 
+    diferitele functii discutate. 
+    In cazul "add_book":
+        Se va adauga o noua carte apeland functia addBook. Dupa ce am creeat structura cu campurile dorite, testam daca aceasta carte se afla deja in 
+        arborele T1(este suficient doar T1). In caz afirmativ, eliberam memoria ocupata de structura. Altfel, Incepem prin a introduce carte in T1.
+        Similar verificam daca autorul cartii se afla deja in arborele T2. Daca exista, introducem cartea in arborele sau, daca nu exista, va trebui sa intorducem si autorul
+        in T2.
+    In cazul "search_book":
+        Dupa ce citesc numele cartii care trebuie cautata, testez daca acest "nume" se termina cu caracterul '~' caz in care va trebui sa apelez functiile de autocomplete dupa
+        ce elimin caracterul tilda din titlu. 
+        In cazul in care titlul primit este unul intreg, apelez functia findString pe arborele T1.
+    In cazul "list_author":
+        Similar cu search_book, se va face testul de auto-completare. Dupa aceasta, il caut in T2. In cazul in care il gasesc, voi proceda ca si la "search_book", doar ca 
+        de data asta ma voi folosi de arborele asociat autorului (T), in loc de arborele ce contine toate cartile (T1).
+    In cazul "delete_book":
+        Aceasta comanda cere stergerea unei carti din toti arborii respectivi, si din memorie. Incep prin a cauta cartea in T1. In caz ca o gasesc voi aloca memorie pentru 
+        numele autorului cartii deoarece voi avea nevoie sa il stiu dupa ce elimin structura carte din memorie. Caut autorul in T2 pentru a avea arborele sau T. Elimin cartea
+        din T1 apeland functia elimString. Daca aceasta era singura carte din T1, arborele nu va mai exista asadar trebuie refacut pentru eventuale introduceri. 
+        Sterg cartea din T si procedez la fel, in cazul in care T este gol dupa eliminare, trebuie sa sterg si numele autorului din T2.
+        Eliberez memoria alocata de numele autorului, alocat dinamic la inceput.
+    La final, inchid cele doua fisiere si apelez functia DistrArb pentru a elibera memoria ocupata de cei doi arbori trie.

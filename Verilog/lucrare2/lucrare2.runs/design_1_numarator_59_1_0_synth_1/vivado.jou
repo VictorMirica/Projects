@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Apr 10 17:17:42 2022
+# Process ID: 15748
+# Current directory: H:/2sem2/CN/lucrare2/lucrare2.runs/design_1_numarator_59_1_0_synth_1
+# Command line: vivado.exe -log design_1_numarator_59_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_numarator_59_1_0.tcl
+# Log file: H:/2sem2/CN/lucrare2/lucrare2.runs/design_1_numarator_59_1_0_synth_1/design_1_numarator_59_1_0.vds
+# Journal file: H:/2sem2/CN/lucrare2/lucrare2.runs/design_1_numarator_59_1_0_synth_1\vivado.jou
+# Running On: DESKTOP-D952KFM, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 6, Host memory: 17110 MB
+#-----------------------------------------------------------
+source design_1_numarator_59_1_0.tcl -notrace
