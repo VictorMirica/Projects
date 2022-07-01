@@ -1,7 +1,0 @@
-Running: xsim.dir/simulare2_behav/xsimk.exe -simmode gui -wdb simulare2_behav.wdb -simrunnum 0 -socket 58739
-Design successfully loaded
-Design Loading Memory Usage: 7084 KB (Peak: 7084 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 7704 KB (Peak: 7704 KB)
-Simulation CPU Usage: 46 ms
