@@ -1,0 +1,3 @@
+add_book a:unu:1:1
+add_book aa:doi:1:1
+delete_book a

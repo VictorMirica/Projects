@@ -1,0 +1,121 @@
+MIRICA Victor - 315CB
+
+Punctaj teste:
+    Total: [135/135]
+    Bonus: [20/20]
+
+Functii pentru lista generica simplu inlantuita (functiiLista.c):
+
+        Functia InsL:
+    Functie folosita pentru a insera un element, in ordinea corespunzatoare, in lista. Parametrii primiti sunt lista, elementul si o functie de comparatie
+    Dupa ce se aloca celula, se va face un test pentru cazul in care lista este vida/goala.
+    Urmatorul test particular este cel in care elementul trebuie introdus la inceputul listei.
+    In continuare, se va parcurge lista, comparand fiecare element cu elementul ce trebuie introdus. Se va retine si pozitia in lista la care ne aflam.
+    Dupa introducere, functia intoarce pozitia in lista la care am facut introducerea.
+        Functia InsTop:
+    Functie de introducere in lista, specifica pentru lista topTen, unde elementele trebuie introduse in functie de campul lor "top".
+    Functia primeste in loc de o functie de comparatie, pozitia unde trebuie introdus elementul. 
+    Se procedeaza similar ca la functia de mai sus, ghidandu-ne dupa argumentul "top", in loc de rezultatul functiei de comparatie "f".
+    De asemenea, acest tip de lista poate retine doar zece elemente, asadar la final se va face un test in plus pentru lungimea listei.
+    In cazul in care lungimea este mai mare decat 10, inseamna ca tocmai am introdus al 11-lea element. Ultimul element din lista trebuie eliminat, asadar
+    functia va intoarce acest element in loc de NULL, pentru a putea fii eliberat corect.
+        Functia AlocCelulaL:
+    Aloca spatiu si initializeaza o celula noua, dupa care o intoarce.
+        Functia DistrugeL:
+    Functia distruge lista primita ca argument, folosind pe elementele sale o functie de eliberare de asemenea primita ca argument.
+        Functia LungimeL:
+    Intoarce lungimea listei.
+        Functia cautaSerialL:
+    Aceasta functie parcurge lista primita, si, folosind functia primita de asemenea ca argument, compara elementele din lista pentru a vedea daca
+    elementul dorit se gaseste in aceasta. In caz pozitiv, elementul este intors.
+        Functia eliminaSerial:
+    Functie pentru a elimina un serial din lista. Pe langa lista si elementul care trebuie eliminat, functia mai primeste ca argumente si un integer
+    "top", care indica daca lista in care ne aflam este topTen, si o functie f, folosita in cazul in care ne aflam in topTen (top = 1), folosita pentru a 
+    decrementa campul "top" al elementelor de dupa serialul eliminat. 
+    Eliminarea este una generica, in care se parcurge lista pana se ajunge la elementul cautat.
+
+Functii pentru coada (functiiCoada.c):
+
+        Functia InitQ:
+    Functie folosita pentru initializarea unei cozi.
+        Functia IntrQ:
+    Introduce un element in coada, dupa alocare si un test pentru o coada vida, se aplica o inserare generica in coada.
+        Functia ExtrQ:
+    Se extrage elementul din coada in void*-ul primit ca argument "ae". Dupa ce se schimba inceputul cozii, copiem informatia celulei in ae
+    si eliberam spatiul in plus.
+        Functia ResetQ:
+    Transforma coada intr-una vida, distrugand lista si atribuind NULL ambelor capete.
+        Functia DistrQ:
+    Apeleaza functia ResetQ, dupa care elibereaza si coada in sine.
+        Functia ConcatQ:
+    Concateneaza o lista sursa (argumentul as), la o lista destinatie (argumentul ad);
+
+Functii pentru stiva (functiiStiva.c):
+
+        Functia InitS:
+    Intializeaza stiva.
+        Functia Push:
+    Introduce un element in stiva, aloca memorie si apeleaza functie memcpy, dupa care schimba varful stivei.
+        Functia Pop:
+    Extrage un element din stiva, apeleaza functie memcpy si elibereaza memorie, dupa care schimba varful stivei.
+        Functia ResetS:
+    Transforma stiva intr-una vida, distrugand lista si atribuind NULL varfului.
+        Functia DistrS:
+    Apeleaza functia ResetS, dupa care elibereaza si stiva in sine.
+        Functia Rastoarna:
+    Introuce elementele din stiva sursa (as) in stiva destinatie (ad), rasuranand ordinea.
+
+Functiile din main.c si parcurgerea programului(main.c):
+
+        Functiile freeEpisod, freeSezon si freeSerial:
+    Functii folosite la eliberarea memoriei alocata de episod, sezon si serial.
+        Functia cmpSeriale:
+    Functie folosita la introducerea in lista de seriale, testeaza in primul rand ratingul serialelor, iar in caz egal compara si cele doua nume.
+    Daca intoarce 1, inseamna ca serialul primit (e1), trebuie introdus inaintea serialului comparat (e2).
+        Functia findName:
+    Functia folosita in cautarea unui serial intr-o lista. Functia intoarce 1, daca serialul e1, are campul nume egal cu sirul de caractere e2.
+        Functia addSerial:
+    Aceasta functie aloca spatiu pentru un serial si numele sau. Ii seteaza campurile corespunzator informatiei primite din citirea fisierului de intrare.
+    Avem si un caz special, in care serialul este unul din lista topTen, caz in care id-ul va fi 4. In cazul unui serial din alta lista, campul top va fi
+    initializat cu valoarea 0. Se initializeaza coada de sezoane, iar pentru fiecare sezon se va initializa coada de episoade.
+    Introducem toate episoadele in sezon, si sezonul in serial. 
+    Se va intoarce serialul alocat.
+        Functia addSezon:
+    Functie similara cu addSerial, dar care aloca spatiu doar pentru un sezon. De asemenea, initializaza si completeaza corespunzator coada de episoade.
+    Aceasta functie este folosita pentru a adauga un sezon nou unui serial deja existent. Functia intaorce sezonul alocat. 
+        Functia decrementTop:
+    Folosita doar la eliminarea unui serial din lista topTen, decrementeaza campul "top" al serialului primit ca argument.
+        Parcurgerea programului:
+    La inceput se va face un test pentru cazul in care programul a fost rulat incorect din linia de comanda. La rulare, avem nevoie de doua argumente in linia de comanda:
+    fisierele de intrare si iesire, asadar argc ar trebui sa fie egal cu 3.
+    Deschidem cele doua fisiere dupa care initializam listele, cozile si stivele cu care vom lucra. De asemenea initializam cu 0 si o variabila care reprezinta numarul 
+    de elemente din coada watchLater. 
+    Incepem citirea fisierului, primul cuvant de pe fiecare linie va fi inregistrat in sirul de caractere "comanda". 
+        In cazul comenzii "add", Creem un serial apeland functia addSerial, dupa care il introducem in lista corespunzatoare campului sau "id".
+        In cazul comenzii "add_sez", care adauga un sezon nou unui serial existent, citim numele si numarul de episoade din fisier. 
+    Creem un sezon nou folosind functia addSezon. Trecem prin listele, stivele si cozile care pot contine serialul pana cand
+    il gasim, caz in care ii adaugam in coada de sezoane noul sezon creeat.
+        Comanda "add_top" se comporta similar cu "add", doar ca are cativa pasi in plus, precum afisarea in fisierul de iesire a intregii liste dupa ce se face introducerea.
+        Comanda "later" introduce un serial deja existent in coada later. Se incrementeaza numarul de elemente. Cautam serialul in liste, de aceasta data pastrand 
+    si lista din care a facut parte acesta. Introducem serialul in coada si il eliminam din fosta sa lista.
+        Comanda "watch" presupune "vizionarea" unui serial, pentru o durata de timp data. Vizionarea serialul presupune la randul ei introducerea acestuia in stiva currentlyWatching,
+    in cazul in care nu era deja. De asemenea, la vizionarea integrala a unui serial, acesta va fi introdus in stiva history, si se va afisa si un mesaj aferent in fisierul
+    de iesire. Incepem prin a cauta serialul. Prima oara il cautam in stiva currentlyWatching, daca acesta se afla aici, el trebuie extras.
+    Nu avem garantia ca serialul cautat se va afla in varful stivei, asadar ne vom folosi de o stiva ajutatoare in care vom introduce elementele pe care le scoatem.
+    La extragerea serialului cautat, se va iesi din "loop-ul" folosit pentru apelarea functiilor Pop respectiv Push, si se va rasturna stiva ajutatoare inapoi in currentlyWatching.
+    In cazul in care serialul nu se afla deja in currentlyWatching, il cautam in toate cele 4 liste. Daca nu este nici acolo, il vom cauta in coada watchLater. In cazul in care 
+    am gasit in sfarsit serialul, acesta trebuie extras. Daca extragerea a fost facut dintr-una din cele 4 liste, trebuie doar sa retinem in doua variabile serialul si lista, dupa care
+    sa eliminam serialul din lista. In cazul in care am gasit serialul in coada watchLater, vom folosi dinnou o coada ajutatoare, pentru ca nu avem garantia ca ce cautam este
+    primul in coada. Similar cu procedura de la stiva currentlyWatching, dupa ce gasim serialul dorit, vom concatena restul cozii watchLater in coada de ajutor, dupa care vom
+    introduce toate elementele inapoi in coada din care au provenit initial (In acest caz tinem cont si de variabila posLater).
+    Dupa ce am gasit si extras serialul, ne vom uita la episoade din el pana cand durata stabilita ajunge la 0. Cat timp ne uitam, extragem sezoane din coada lor specifica.
+    Din sezonul scos, vom scoate episoade fie pana cand coada episoadelor este NULL (am terminat sezonul, va trebui sa extragem altul), fie pana cand durata ajunge in final la 0.
+    Dupa ce am extras episodul, avem trei cazuri. Primul caz este cel in care si numarul de minute al episodului si durata sunt egale. In acest caz vom testa daca sezonul mai are 
+    episoade ramase, caz in care il reintroducem in coada serialului in locul din care l-am scos. Al doilea caz este cel in care durata este mai mare decat episodul. Aici va trebui
+    sa ne uitam in continuare la serial, asadar extragem un epsiod nou sau, daca este cazul, un sezon nou. Al trei-lea caz este cel in care durata este mai mica decat numarul de 
+    episoade al episoadului. Aici vom seta durata la 0, vom scadea numarul de minute vizionate din episod, il vom reintroduce in coada sezonului pe care la randul lui il vom reintroduce
+    in coada serialului, Aceste reintroducere trebuie facute la locul din care au fost extrase. La final, reintroducem serialul in stiva currentlyWatching. In caz in care ne-am uitat
+    la serial integral, il extragem din stiva currentlyWatching, pentru a-l introduce in stiva history. Afisam mesajul aferent daca este cazul si facem eliberare de memorie unde trebuie.
+        Comanda "show" trebuie sa afiseze in fisierul de iesire lista, stiva sau coada corespunzatoare informatiei primite. Citim informatia si o stocam in variabila "nume".
+    variabila p va prelua lista ce trebuie afisata. Dupa preluare, vom afisa continutul listei in modul propus de exercitiu.
+    La final eliberam listele, stivele si cozile folosite si inchidem cele doua fisiere.
