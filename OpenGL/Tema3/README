@@ -1,0 +1,81 @@
+Mirica Victor 334CB
+
+	Tema este formata din fisierul Tema3.cpp (.h) si fisierele din directorul shaders, 
+VertexShader.glsl si FragmentShader.glsl Pentru tema a fost adaugata si primitiva de 
+tip con, in directorul primitivelor si diferite texturi in directorul textures.
+
+	In VertexShader este caluclat gl_Position si sunt trimise catre FragmentShader 
+coordonatele texturii, world_position si world_normal.
+
+	In FragmentShader functia point_light_contribution calculeaza iluminarea directionala 
+(singura iluminare implementata). In main se aplica miscarea texturii planului pentru efect
+de miscare. De asemenea, in cadrul planului am combinat doua texturi pentru a oferi o 
+textura mai apropiata de zapada (texturile ground si white).
+
+	Tema3.h
+	Pe langa functiile folosite, am implementat o structura care corespunde unui obstacol.
+	aceasta structura detine mesh-ul, shader-ul, textura si matricea model din care este
+	format obstacoloul. De asemenea mai retine si pozitia acestuia (aceasta fiind una imutabila)
+	si faptul daca este un colectabil sau nu.
+
+	Tema3.cpp
+	Init()
+	In aceasta functie se incarca texturile, meshurile si shaderul.
+	Aici imi creez si un quad 60x60 care va fi folosit pe post de teren
+
+	RenderPlayer()
+	Functie folosita pentru a da render la jucator (corp + schiuri) si teren.
+	Pe langa asta, in aceasta functie updatez constant si pozitia camerei.
+
+	RenderObstacles()
+	Functie care decide daca mai trebuie adaugat inca un obstacol pentru a fi rendered
+	si in final da render la toate obstacolele. Am decis sa adaug un obstacol odata la 0.5
+	secunde, la o pozitie random in partea de jos a quadului (care nu este vizibila in viewport).
+	Adaug un obiect la intamplare din cele 4 propuse.
+	Copacul este format din 2 meshuri, un paralelipiped (box) si un con
+	Piatra este formata din 3 sfere
+	Stalpul este format din 2 boxuri
+	Cadoul colectabil este format dintr-un box
+
+	Aceste obiecte, odata creeate (sub forma unei structuri Obstacle) sunt introduse
+	intr-un deque
+	La finalul functiei, vor fi rendered toate obiectele din deque
+	Unrenderul obiectelor se va face in Update()
+
+	checkCollisions()
+	Functia care verifica daca playerul s-a lovit cu vreun obstacol.
+	Pentru verificare putem sa folosim doar coordonatele x si z,
+    deoarece coordonata z a jucatorului este in continua crestere
+    nu putem avea doua instante in care x si z ale jucatorului sa fie
+    egale cu cele ale vreunui obstacol.
+	Iterez prin lista de obstacole si verific daca a avut loc vreo coliziune
+	(AABB vs AABB). In cazul unei coliziuni, verific daca obiectul este un cadou,
+	caz in care incrementez scorul si mut cadoul la coordonatele lume 0, 0, 0 acesta
+	va fi unrendered automat la timpul lui.
+	Altfel, opresc miscarea jucatorului si afisez scorul in consola.
+
+	Update()
+	Pentru inceput ma ocup de unrender-ul obstacolelor care nu mai pot fi vazute.
+	In cazul in care in coada sunt mai mult de 30 de obstacole, il eliminam pe cel
+	mai vechi (pop_front).
+	Pentru calcul translatiilor tx ty tz, inmultesc miscarea dorita cu sin respectiv cos
+	de 30, deoarece planul este inclinat cu 30 de grade. In cazul miscarii pe tx 
+	(miscarea data de cursor), aplic un sinus de orientarea curenta a jucatorului, calculata
+	in OnMouseMove().
+	Dupa calcularea diferitelor matrici de miscare si rotatie, apelez functiile RenderPlayer
+	si RenderObstacles, aplic o miscare sursei de lumina directionala si verific coliziuni.
+
+	RenderSimpleMesh()
+	Trimit catre shader diferitele field-uri uniform. (pentru lumina si texturi).
+
+	OnKeyPress()
+	Verifica daca a fost apasata tasta 'R' pentru restartarea jocului. In acest caz toate
+	valorile revin la cele initiale (din functia Init()), si vectorul de obstacole se goleste.
+
+	OnMouseMove()
+	Calculez unghiul dintre pozitia cursorului si o dreapta paralela cu OX care trece prin
+	centrul ferestrei.
+	Acest calcul va fi aplicat doar daca cursorul se afla in jumatatea de jos a ferestrei.
+	noua orientare este calculata ca unghiul dintre 2 segmente. paralela OX mentionata mai sus
+	si un segment din centrul ecranului pana la cursor.
+	Noua orientare se va aplica daca se gaseste intr-un intreval de +- 60 de grade.

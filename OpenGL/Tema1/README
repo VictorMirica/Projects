@@ -1,0 +1,76 @@
+Mirica Victor 334CB
+
+
+Tema este formata din doua fisiere sursa: Tema1.cpp (.h) si transform.cpp (.h)
+
+
+	transform.cpp
+Contine functiile pentru cele trei forme principale pe care le vom folosi
+in tema, patrat, triunghi si cerc.
+CreateTriangle creeaza un triunghi simplu
+CreateSquare creeaza un patrat simplu
+CreateCircle creeaza un cerc simplu prin metoda triangle fan:
+	Prima oara calculez numarul de incremenete pentru punctele de pe lungimea
+	cercului. Dupa care introduc in vectorul de varfuri puncte de forma 
+	(l * cos(unghi), l * sin(unghi)).
+	Intre fiecare punct adiacent, creez un triunghi cu ajutorul centrului.
+
+
+	Tema1.cpp
+init() 
+	Initializez valori precum marimea ratei si a obiectelor din HUD. De asemenea
+initialez coordonatele de spawn ale ratei x = [0, resX], y = 0 si unghiul initial de orientare.
+
+respawnDuck()
+	Functia care respawneaza rata. Prima oara verific cauza respawnerii. Daca aceasta a evadad, pierd o viata
+	daca aceasta a murit, cresc scorul.
+	Respawnez rata, numarul de gloane si timpul se va reseta.
+	In final, cresc viteza urmatorilor rete, in functie numarul ratei la care sunt.
+
+checkState()
+	Functie care verifica in ce stare trebuie sa se afle rata.
+	Aceasta este apelata la fiecare apel al lui Update().
+	Incrementam variabila prin care reprezentam timpul.
+	Verificam daca a trecut destul timp de la ultima rata.
+	Verificam daca jocul s-a terminat.
+	in final, verificam daca rata a fost ucisa, caz in care o miscam direct in jos
+	daca am ramas fara gloante, rata va evada, deci aceasta se va misca in sus.
+
+checkCollision()
+	Functia verifica daca rata a lovit vreo margine.
+	In functie de marginea lovita, aceasta verifica directia din care aceasta a venit
+	si calculeaza unghiul in care trebuie sa continue.
+	Pentru un calcul mai usor, inmultim variabila 'orientation', care este in radieni, cu 
+	180/PI, pentru a calcula in grade.
+	In cazul in care marginea lovita este cea de sus sau cea de jos, verificam daca rata s-a lovit
+	de aceasta margine deoarece a evadat respectiv murit, cazuri in care o respawnam.
+
+drawHUD()
+	desenam HUD-ul (crosshair, arma, gazon, vieti, gloante, scor).
+	Crosshair-ul este translatat constant la cursorul mouse-ului, lucru calculat
+	in onMouseMove.
+	Arma, plasata in partea de jos a ecranului, se roteste in functie de pozitia cursorului,
+	lucru de asemenea calculat in onMouseMove.
+	Vietile si Gloantele sunt randate in functie de cate mai sunt.
+	Scorul are un maxScore, un dreptunghi gol si un currentScore, un dreptunghi plin, care
+	se va scala in functie de scorul curent. 
+
+drawDuck()
+	Deseneaza rata (cap, corp, aripi, cioc si hitbox)
+	Toate aceastea se vor misca impreuna, dupa matricea parinte
+	parentMatrix, care se va misca cu (sin(orientation), cos(orientation))
+	si vor fi orientate in aceeasi directie, in functie de orientation.
+	In cazul aripilor, acestea se vor misca constant in jurul centrului corpului.
+	Miscarea lor se va opri cand rata moare, pana aceasta cade jos.
+	Hitbox-ul nu va fi randat.
+
+Cand mouse-ul se misca, verificam daca mouse-ul nostru se afla in hitboxul ratei
+De asemenea, calculam coordonatele crosshair-ului si unghiul armei.
+
+Cand se va apasa click, se va scade un glont, iar daca cursorul este in hitbox, rata va muri.
+
+Pentru bonus, am randat unele chestii in plus precum un gazon in fata si un fundal albastru in spate,
+am implementat oprirea aripilor cand rata moare.
+Am implementat o arma care urmareste cursorul mouse-ului, iar cand se va apasa click stanga (cand se va trage)
+aceasta va avea o mica animatie prin care se observa un foc de arma iesind din ea.
+De asemenea, arma are si un crosshair.
