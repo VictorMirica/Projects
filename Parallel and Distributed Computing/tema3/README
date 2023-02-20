@@ -1,0 +1,61 @@
+Mirica Victor 334CB
+
+    La initializarea fiecarui proces, se vor prelua parametrii dati la rulare si
+se va intializa enviromentul MPI.
+
+    Cele patru procese coordonator vor apela functia read_neighbours pentru a citi din
+fisierele de intrare copiii si coordonatorii vecini. In cazul proceselor worker, acestea
+vor avea doar un vecin, parintele lor, asa ca vor astepta sa primeasca rankul acestuia.
+In functia read_neighbours(), citesc fisierele linie cu linie, prima linie reprezinta numarul
+de workeri din fiecare cluster, pe langa acestia mai am inca doi vecini, coordonatorii celorlalte
+clustere adicente. (in cazul in care nu exista defecte pe canalul de comunicatie).
+Dupa ce citesc fiecare worker si il adaug in vectorul de vecini, trimit spre acesta rank-ul meu,
+ca sa stie care coordonator este parintele lui. (unicul vecin al workerului).
+Dupa acesta, o sa adaug vecinii de la stanga, adica in ordine descrescatoare, mai putin in cazul
+lui 0, caz in care vecinul din stanga este 3. Urmeaza vecinul din dreapta. Similar, in acest caz
+ordinea este crescatoare, mai putin in cazul lui 3, al carui vecin este 0.
+Daca avem erori pe canalul de comunicatie, nu vom avea legature intre 0 si 1, am reprezentat aceasta
+lipsa de conexiune prin vecinul '-1'.
+
+    In cazul topologiei, consider fiecare din cei 4 coordonatori ai clusterelor liderul in clusterul respectiv,
+asadar, orice proces cu rank mai mic decat 4 este lider. In cazul workerilor, liderul este unicul vecin.
+
+    Urmeaza formez topologia prin apelarea functiei get_dst(). Aici am doi vectori, v si vRecv, care vor fi folositi
+si comparati pentru a updata vectorul final al topologiei. Practic vrecv este un vector auxiliar.
+Pentru inceput, in cazul in care procesul este un lider (coordonator), acesta nu are parinte, deci valoarea sa finala
+din vector va fi -1. In cazul in care sunt un proces worker, astept un mesaj de la parintele meu. Cand primesc mesajul,
+ii voi introduce sursa la pozitia mea in vector si il voi propaga inapoi parintelui. 
+La final, workerii asteapta de la parinti vectorul final.
+Coordonatorii isi trimit vectorul workerilor sai, dupa care asteapta sa primeasca inapoi de la acestia 
+un vector updatat la pozitia workerului respectiv. Pentru fiecare worker, updatez vectorul principal cu valoarea
+primita de la acesta. Dupa ce am un vector completat de la toti workerii din clusterul respectiv, trebuie sa
+partajez vectorul si la coorodnatorii vecini. Trimit vectorul de la procesul 0, in sens trigonometric.
+Cand primesc vectorul, introduc in el ce am primit si de la workerii mei si il dau mai departe.
+Cand vectorul ajunge si este updatat in final de procesul 1, acesta il trimite inapoi pe unde a venit,
+adica in sensul ceasornic. Odata ajuns inapoi la 0, topologia va fi completa si toate procesele coordonator o vor avea.
+Tot ce mai ramane de facut este sa o trimit si workerilor.
+Functia intoarce topologia completa, moment in care fiecare proces o va afisa.
+
+Dupa afisarea topologiei, trebuie realizat calculul vectorului, acesta va fi calculat de catre functa getArray().
+Pentru inceput, fiecare proces cunoaste workload-ul unui worker, adica cate elemente din vector trebuie sa calculeze.
+aceasta este n/w, unde w este numarul de workeri.
+De asemenea, pentru fiecare worker, calculez indexul din vector unde acesta trebuie sa inceapa calcului, reprezentat
+de workLoad * rank. (-4 pentru a elimina coordonatorii).
+Procesul 0 genereaza vectorul initial, dupa care trimite il trimite workerilor sai si coordonatorului din stanga.
+Coordonatorii, pana la ultimul (procesul 1), propaga mai departe vectorul initial catre workeri si coordonatorii vecini.
+Workerii trebuie sa primeasca vectorul initial si sa aplice calcului pe partea lor din vector. In cazul in care
+sunt la ultimul proces worker, acesta se va asigura ca calcularea vectorului a ajuns la final.
+Dupa calcule, trimit vectorul inapoi la coordonatorul clusterului.
+Coordonatorii primesc vectorul partial completat de la workeri si il introduc intr-un vector auxiliar.
+Similar cu propagarea intre coordonatori la partea de topologie, acestia trimit vectorul semi-complet in sensul
+trigonometric si combin vectorii intr-unul final. Stiu ca un element trebuie inlocuit daca acesta este diferit de cel
+primit de la workerii mei dar nu face parte din vectorul initial propagat de procesul 0.
+Dupa ce vectorul ajunge la procesul 1, acesta ar trebui sa fie complet, tot ce trebuie sa fac este sa trimit
+din nou catre procesul 0, in sens ceasornic. (In caz de cutoff, sau direct, in cazul in care nu am 
+defecte pe canalul de comunicatie).
+Procesul 0 afisaza vectorul final.
+
+Pentru final apelez MPI_Finalize(), de asemenea, intre diferitele portiuni apelez MPI_Barrier() pentru a
+sincroniza procesele.
+
+

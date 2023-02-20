@@ -1,0 +1,31 @@
+Mirica Victor 334CB
+
+Proiectul contine 5 clase: O clasa main, numita Tema2, doua clase ce reprezinta threadurile de
+nivel 1 (OrdersThreads) si cele de nivel 2 (ProductThread), si doua clase ajutatoare:
+O clasa Order ce reprezinta structura unei comenzi, cu un ID, numar initial de produse si numar
+de produse ramase, si o clasa MyFileIO care implementeaza doua functii sincronizate pentru citirea
+si scrierea intr-un fisier.
+
+In Tema2 incep prin a prelua argumentele, adica folderul de input si numarul de thread-uri.
+Dupa ce creez BufferedWriters pentru cele doua fisiere de output (aceste writers vor fi comune pentru
+thread-urile de nivel 1 respectiv nivel 2) si un BufferedReader, comun pentru threadurile de nivel 1.
+Imi creez un executorService cu P workers si dau submit la P task-uri reprezentate de threaduri de
+nivel 1, care vor citi fisierul cu comenzi.
+Verific cand toate taskurile se finalizeaza apeland functia awaitTermination, pentru a inchide writerii si readerii.
+
+OrdersThread reprezinta threadul de nivel 1, care citeste fisierul cu comenzi linie cu linie si introduce in pool
+task-uri de nivel 2, care se vor ocupa de produsele din comanda respectiva.
+Citesc fisierul orders linie cu linie, preluand datele din fiecare linie, cu care voi da submit la un nou task
+de tip ProductThread.
+Cand termin de citit fisierul, in cazul in care nu mai am nimic in pool, dau shutdown la executorService.
+In cazul in care acest thread a fost apelat cu un obiect de tip Order care nu este null, inseamna ca trebuie sa
+trec acel obiect in fisierul de output pentru comenzi, daca numarul de produse al comenzii a fost diferit de 0.
+In cazul in care toate produsele comenzii au fost livrate, adaug si ",shipped".
+
+ProductThread reprezinta threadul de nivel 2, apelat doar de threadul de nivel 1.
+Acesta isi creeaza in reader pentru fisierul de produse, dupa care citeste fisierul linie cu linie si preia
+produsele comenzii pana cand acesta termina fisierul SAU nu mai are produse de verificat. In cazul in care
+gaseste un produs cu ID-ul comenzii cautate, decrementez numarul de produse ramase si adaug produsul in fisierul
+de output + ",shipped".
+Dupa ce inchis reader-ul, apelez un nou thread de nivel 1, adaugand-ul in task pool, de data asta cu un obiect
+de tip Order concret, ca acesta la urma sa il scrie in fisierul sau de output.

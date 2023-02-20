@@ -1,0 +1,79 @@
+Mirica Victor 334CB
+
+Tema este implementata in c++, in fisierul tema1.cpp.
+Ca argument al functiilor pentru cele doua tipuri de threaduri,
+voi folosi arg_struct, o structura care contine:
+o bariera si un mutex, un string* ce prezinta vectorul cu nume de fisiere.
+mat, o matrice 3d unde se vor stoca datele.
+indexes, o matrice unde se vor retine indecsii pentru fiecare lista al fiecarui
+thread mapper.
+id, M, R: variabilele prezentate in enunt.
+nrFisiere, numarul de fisiere care trebuie citite.
+next, un integer care reprezinta urmatorul fisier care trebuie citit, deoarece
+am implementat o citire dinamica.
+
+reduce_function()
+    Functia apelata de catre threadurile reducer. Aceasta trebuie sa inceapa doar cand
+    se termina toate threadurile mapper. Pentru asta folosesc o bariera chiar la inceput, care
+    se va debloca cand ajung TOATE threadurile la ea (M + R). Dupa care, verific id-ul, iar daca acesta 
+    reprezinta un mapper, ies din functie. 
+    Pentru fiecare mapper in parte, am in matricea 'indexes' numarul de elemente din fiecare lista.
+    Pot sa aflu marimea maxima a listei finale in cazul fiecarui reducer si sa o creez.
+    Dupa ce am lista formata, verific cate valori unice am si scriu rezultatul in fisierul de iesire respectiv
+    fiecarui id.
+
+getNextFile()
+    Functie care intoarce urmatorul fisier valabil pentru mapperi. Variabila next este incrementata de fiecare data
+    cand un fisier este citit, aceasta reprezinta indexul urmatorului fisier care poate fi citit.
+    Daca am terminat fisierele, fileName-ul va fi gol.
+
+getExponent()
+    Aceasta functie, apelata de mapperi, introduce in matricea valorilor numerele care au puteri perfecte.
+    exponentul minim este 2, iar cel maxim este R + 1. Avem un corner case, daca numarul este 1, acesta 
+    trebuie adaugat in toate listele mapperului respectiv.
+    Verificam puterea lui 2 la exponentul curent, in cazul in care aceasta este mai mare, numarul nu are cum sa
+    fie in liste viitoare.
+    Pentru a gasi daca numarul este o putere perfecta pentru puterea 'exp' folosesc un binary search simplu.
+    Daca contorul din dreapta la puterea exp este mai mic ca numarul, pot sa dublez contorul din dreapta.
+    Dupa ce caut mijlocul, daca indexul din stanga la puterea exp este egal cu numarul, am gasit un exponent deci
+    il adaug in matrice. Fac acest binary search pentru fiecare exp posibil, in limitele precizate mai sus.
+
+map_function()
+    Functia threadurilor mapper. In cazul in care am mai multe threaduri decat fisiere, verific asta prin 
+    id < nrFisiere. Dupa care preiau primul fisier din lista. Cat timp numele fisierului nu este null, preiau fisiere
+    apeland getFileNext. Aceasta apelare va fi blocata de un mutex, pentru a opri threadurile din a prelua acealsi fisier.
+    Odata ce am fisierul, il citesc linie cu linie, iar pe fiecare numar, apelez getExponent(), explicat mai sus.
+    La final, apelez reduce_function() pentru a intra in acea functie si a decrementa contorul barierei.
+
+allocMat() si freeMat()
+    Doua functii clasice pentru alocarea/eliberarea unei matrici 3d.
+
+main()
+    Incep prin a prelua parametrii din linia de comanda.
+    Creez un vector de functii p, care contine cele doua functii pentru threadurile mapper si reducer.
+    Dupa aceasta, aloc matricea pe care o vom folosi sa stocam datele. Aceasta poate fi explicata in urmatorul fel:
+
+    fiecare thread M are o lista de R liste pe care le umple.
+    Dupa care, fiecare thread R lucreaza pe cate M liste
+    (R1 lucreaza pe lista 1 de la fiecare M, R2 lucreaza pe lista 2 de la fiecare M etc)
+    
+    exemplu de matrice
+    M = 2
+    R = 3
+    [[1,2], [3,4], [1]]  <- M1
+    [[2],   [4],   [6,7,8]] <- M2
+     ^R1     ^R2     ^R3
+    
+    la M-uri lucrez pe mat[id][0, 1, 2, ..., R - 1]
+    la R-uri lucrez pe mat[0, 1, 2, ..., M -1 ][id - M]
+
+    indexes prezinta o matrice care reprezinta indecsii pentru cele R liste ale unui thread M
+    ex: indexes[3][0] = 5
+    prima lista (puterea a 2-a) a thread-ului mapper cu id = 3 are 5 elemente.
+
+    Dupa ce am initializat variabilele si structurile, citesc fisierul principal, linie cu linie introduc
+    numele fisierelor pe care se va lucra de catre mapperi intr-un vector de stringuri.
+    Initializez structurile care vor fi date ca parametru.
+    Pornesc threadurile, de la 0 la M + R, aleg functia pe care o va primi threadul in functie de id.
+    id-urile de la 0 la M - 1 vor fi mapperi, cei de la M la R - 1 vor fi reduceri.
+    La final, dau join la threaduri, eliberez matricea si distrug mutexul si bariera.
