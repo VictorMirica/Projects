@@ -1,0 +1,31 @@
+Mirica Victor-Nicolae 334CB
+
+This code implements a memory management system that allocates memory 
+dynamically. It provides two allocation strategies: mmap, which allocates
+a new block of memory, using the mmap system call, and brk, which uses the
+sbrk system call. The program stores metadata for each allocated block in
+a struct that includes the block's size, 
+status (mapped, free, or allocated), and a pointer to the next block in the
+linked list. The program also implements coalescing of adjacent free blocks
+& splitting of blocks to prevent fragmentation.
+
+The main functions of, this program are:
+
+allocate_block_map: allocates a new block of memory using mmap and initializes
+the block's metadata.
+
+allocate_block_brk: allocates a new block of memory using sbrk, and initializes
+the block's metadata.
+
+split_block: splits a block into two blocks to prevent fragmentation.
+
+coalesce_free_blocks: coalesces adjacent free blocks to prevent fragmentation.
+
+coalesce_blocks: coalesces the current block with adjacent free blocks, used
+for reallocation.
+
+addToList: adds a new block, to the end of the linked list.
+
+allocate: the main allocation function, that rounds up the requested size,
+coalesces adjacent free blocks, finds the best fitting free block or allocates
+a new block using brk, and expands the last block if it is free.

@@ -1,0 +1,54 @@
+Mirica Victor-Nicolae
+334CB
+
+    os_threadpool.c
+
+task_create()
+Allocates the task structure and initializes it with the given parameters.
+
+add_task_in_queue()
+Creates and initializes a new node
+Using a mutex, adds the node in the queue
+
+get_task()
+Using a mutex, returns a task and removes it from the queue
+
+threadpool_create()
+Initializes the threadpool structure
+Creates the threads
+
+thread_loop_function()
+While the looping is not stopped (should_stop = 0) or there are still tasks in the queue
+    Get a task from the queue
+    Execute the task
+    Free the task
+    Exits the thread
+
+threadpool_stop()
+Call sleep(1) while processing is not yet done.
+Stops and joins the threads
+Frees the queue and the threadpool structure
+
+
+    parallel.c
+
+Apart from sum and graph, i added the threadpool as a global variable
+
+processNode()
+This is the function that is executed by each thread
+Recieves the node index.
+Using a mutex, add to sum the value of the node
+Check and add tasks in the queue for neighboring nodes
+
+traverse_graph()
+This is the initial function that is called by the main thread
+For all nodes in the graph, add a task in the queue
+
+processingIsDone()
+Checks if the processing is done
+Returns true if all nodes have been visited
+
+main()
+Create the threadpool
+Run traverse_graph()
+Stop the threadpool
